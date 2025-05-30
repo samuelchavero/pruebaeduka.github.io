@@ -238,6 +238,25 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='ep-helper-css' href='https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/css/ep-helper.css?ver=7.8.0' media='all' />
 <style id='wp-emoji-styles-inline-css'>
 
+
+
+/* Cambia color de fondo y texto del botón */
+.elementor-element-3a23aa4 .elementor-button {
+  background-color: #5B84A3 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+}
+
+/* Color al pasar el mouse */
+.elementor-element-3a23aa4 .elementor-button:hover {
+ background-color: #a1b5c5 !important;
+  color: #000000 !important;
+  border-color: #ffffff !important;
+}
+}
+
+
 	img.wp-smiley, img.emoji {
 		display: inline !important;
 		border: none !important;
@@ -285,8 +304,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 }
 
 .uicore-btn:hover {
-  background-color: white !important;
-  color: #252850 !important;
+  background-color: #a1b5c5 !important;
+  color: #000000 !important;
   border-color: #ffffff !important;
 }
 body {
@@ -294,7 +313,59 @@ body {
 }
 
 
+  /* === 🔶 Círculo personalizado para el cursor === */
+    .custom-cursor {
+      pointer-events: none !important;
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 43px !important;
+      height: 43px !important;
+      border: 3px solid #5B84A3 !important;
+      border-radius: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      z-index: 9999 !important;
+      transition: top 0.05s linear, left 0.05s linear !important;
+    }
 
+    /* Oculta cualquier círculo alrededor del cursor que use border naranja */
+* {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Si hay un elemento siguiendo al cursor, este lo oculta */
+.cursor-circle,
+.custom-cursor,
+body::after,
+body::before {
+  display: none !important;
+}
+
+body, * {
+  cursor: default !important;
+}
+
+
+/* Elimina círculos comunes usados por plugins */
+.custom-cursor,
+.cursor,
+body::before,
+body::after,
+div[class*="cursor"],
+[class*="cursor"]::before,
+[class*="cursor"]::after {
+  display: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Fuerza cursor estándar */
+body, * {
+  cursor: default !important;
+}
+</style>
 
 </style>
 <style id='classic-theme-styles-inline-css'>
@@ -371,7 +442,69 @@ body {
 <meta name="msapplication-TileImage" content="img/logo.png" />
 
 </head>
+<body>
+  <!-- 🔶 Elemento que sigue al cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
 
+  <script>
+   
+
+// Elimina cualquier listener de mousemove en document o window
+document.onmousemove = null;
+window.onmousemove = null;
+
+// También podés evitar que elementos sigan el cursor:
+const fakeCursorElements = document.querySelectorAll('.cursor-circle, .custom-cursor');
+fakeCursorElements.forEach(el => el.remove());
+</script>
+
+    <script>
+document.addEventListener('mousemove', function(e) {
+  const el = document.elementFromPoint(e.clientX, e.clientY);
+  console.log('Elemento bajo el cursor:', el);
+});
+</script>
+
+  </script>
+
+<style>
+/* Elimina cualquier círculo visual flotante típico */
+.custom-cursor,
+.cursor,
+[class*="cursor"],
+[class*="circle"],
+body::before,
+body::after,
+*::before,
+*::after {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  display: none !important;
+}
+
+/* Restaura el cursor normal */
+body, html, * {
+  cursor: default !important;
+}
+</style>
+
+<script>
+// También elimina elementos que sigan el cursor dinámicamente
+document.addEventListener('DOMContentLoaded', () => {
+  const suspiciousClasses = ['cursor', 'circle', 'pointer', 'follow'];
+  const all = document.querySelectorAll('*');
+  all.forEach(el => {
+    const classList = [...el.classList].join(' ');
+    if (suspiciousClasses.some(keyword => classList.includes(keyword))) {
+      el.remove();
+    }
+  });
+});
+</script>
+
+</body>
 <body class="home wp-singular page-template-default page page-id-13 wp-embed-responsive wp-theme-vault wp-child-theme-vault-child eio-default translatepress-es_CL ui-a-dsmm-slide  elementor-default elementor-kit-8 elementor-page elementor-page-13">
 		<!-- Custom HTML - Page Options --><!-- 1.1 uicore_before_body_content -->	<div class="uicore-body-content">
 		<!-- 1.2 uicore_before_page_content -->		<div id="uicore-page">
@@ -417,7 +550,12 @@ body {
                     </div><!-- #wrapper-navbar end -->
         <!-- 1.3 uicore_page -->			<div id="content" class="uicore-content">
 
-			<script id="uicore-page-transition">window.onload=window.onpageshow= function() {  }; </script><!-- 1.4 uicore_before_content --><div id="primary" class="content-area">
+			<script id="uicore-page-transition">window.onload=window.onpageshow= function() {  };
+             
+
+
+            
+            </script><!-- 1.4 uicore_before_content --><div id="primary" class="content-area">
 
 	        <article id="post-13" class="post-13 page type-page status-publish hentry">
             <main class="entry-content">
@@ -429,10 +567,10 @@ body {
 						<div class="elementor-element elementor-element-4f99131 elementor-widget-tablet__width-initial ui-e-a-animate elementor-invisible elementor-widget elementor-widget-highlighted-text" data-id="4f99131" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="highlighted-text.default">
 				<div class="elementor-widget-container">
 							<h1 data-delay="900" class="ui-e--highlighted-text" >
-        <span class="ui-e-headline-text elementor-repeater-item-dc068de">Gestión escolar con</span><span class="ui-e-headline-text elementor-repeater-item-ade6a67 ui-e-headline-stroke1">
+        <span class="ui-e-headline-text elementor-repeater-item-dc068de">Acompañamos la gestión escolar con</span><span class="ui-e-headline-text elementor-repeater-item-ade6a67 ui-e-headline-stroke1">
 									<span class="whitespace"></span>
                                     <span>
-                                        <span class="ui-e-headline-text ui-e-headline-highlighted">visión estrategica</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted"> visión estratégica</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
         				</div>
 				</div>
 					</div>
@@ -441,12 +579,12 @@ body {
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-446278f elementor-widget-tablet__width-initial elementor-invisible elementor-widget elementor-widget-text-editor" data-id="446278f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Especialistas en servicios de outsourcing administrativo, cumplimiento normativo y asesoría tributaria en Chile.</p>								</div>
+									<p>Nos especializamos en administración integral, cobranzas, RRHH y procesos para colegios privados que buscan orden, eficiencia y proyección.</p>								</div>
 				</div>
 				<div class="elementor-element elementor-element-3a23aa4 elementor-invisible elementor-widget elementor-widget-button" data-id="3a23aa4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="/company/contact/">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">Contáctanos</span>
 					</span>
@@ -1369,17 +1507,14 @@ body {
                 </div>
 			</nav>
 			<div class="uicore-navigation-content">
-                <div class="uicore-menu-container uicore-nav"><ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 current_page_item menu-item-21"><a href="https://www.taxmanager.cl/" aria-current="page"><span class="ui-menu-item-wrapper">Home</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://www.taxmanager.cl/about/"><span class="ui-menu-item-wrapper">Sobre Nosotros</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://www.taxmanager.cl/servicios/"><span class="ui-menu-item-wrapper">Servicios</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://www.taxmanager.cl/blog/"><span class="ui-menu-item-wrapper">Blog</span></a></li>
-<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-has-children current-language-menu-item menu-item-576"><a href="https://www.taxmanager.cl/"><span class="ui-menu-item-wrapper"><span data-no-translation><img class="trp-flag-image" src="https://www.taxmanager.cl/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_CL.png" width="18" height="12" alt="es_CL" title="Spanish"><span class="trp-ls-language-name">Spanish</span></span></span></a>
-<ul class="sub-menu">
-	<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-575"><a href="https://www.taxmanager.cl/en/"><span class="ui-menu-item-wrapper"><span data-no-translation><img class="trp-flag-image" src="https://www.taxmanager.cl/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" width="18" height="12" alt="en_US" title="English"><span class="trp-ls-language-name">English</span></span></span></a></li>
-</ul>
+                <div class="uicore-menu-container uicore-nav"><ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 current_page_item menu-item-21"><a href="index.html" aria-current="page"><span class="ui-menu-item-wrapper">Inicio</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="index.html"><span class="ui-menu-item-wrapper">Nosotros</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="index.html"><span class="ui-menu-item-wrapper">Servicios</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="index.html"><span class="ui-menu-item-wrapper">Porque elegirnos?</span></a></li>
+
 </li>
 </ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">            <div class="uicore-cta-wrapper">
-				<a href="/site/contact"
+				<a href="index.html"
 					target="_self"
 					class="uicore-btn ">
                     <span class="elementor-button-text">
@@ -1476,5 +1611,43 @@ var frm_js = {"ajax_url":"https:\/\/www.taxmanager.cl\/wp-admin\/admin-ajax.php"
                 }
             })();
         </script>
+
+<style>
+/* Elimina cualquier círculo visual flotante típico */
+.custom-cursor,
+.cursor,
+[class*="cursor"],
+[class*="circle"],
+body::before,
+body::after,
+*::before,
+*::after {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  display: none !important;
+}
+
+/* Restaura el cursor normal */
+body, html, * {
+  cursor: default !important;
+}
+</style>
+
+<script>
+// También elimina elementos que sigan el cursor dinámicamente
+document.addEventListener('DOMContentLoaded', () => {
+  const suspiciousClasses = ['cursor', 'circle', 'pointer', 'follow'];
+  const all = document.querySelectorAll('*');
+  all.forEach(el => {
+    const classList = [...el.classList].join(' ');
+    if (suspiciousClasses.some(keyword => classList.includes(keyword))) {
+      el.remove();
+    }
+  });
+});
+</script>
+
 </body>
 </html>
