@@ -240,13 +240,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 
+/* En pantallas chicas, evitar el salto entre 'con' y 'visión estratégica' */
+@media (max-width: 768px) {
+  .ui-e--highlighted-text {
+    white-space: nowrap;
+    font-size: 4.5vw; /* tamaño de fuente flexible, ajustar si hace falta */
+  }
+}
+
+
 /* Cambia color de fondo y texto del botón */
 .elementor-element-3a23aa4 .elementor-button {
   background-color: #5B84A3 !important;
   color: #ffffff !important;
   border-color: #ffffff !important;
 }
-}
+
 
 /* Color al pasar el mouse */
 .elementor-element-3a23aa4 .elementor-button:hover {
@@ -254,7 +263,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
   color: #000000 !important;
   border-color: #ffffff !important;
 }
-}
+
 
 
 	img.wp-smiley, img.emoji {
@@ -269,7 +278,20 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		padding: 0 !important;
 	}
 
-   
+   /* Fondo blanco en toda la cabecera del menú */
+/* Fondo blanco con sombra en toda la zona del menú */
+header,
+.uicore-navbar,
+.uicore-header-wrapper,
+.uicore-branding,
+.uicore-menu-container,
+.uicore-nav-menu,
+.uicore-menu {
+  background-color: #ffffff !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* sombra suave abajo */
+  z-index: 1000; /* asegurarse de que quede por encima de otros elementos */
+  position: relative;
+}
 
    .uicore-svg-wrapper svg path {
     stroke: #5B84A3 !important;
@@ -280,7 +302,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     opacity: 0.8 !important;
     filter: blur(0.3px);
   }
- 
+
 .ui-menu-item-wrapper {
   color: #000000; /* color base, el que querés que tenga normalmente */
   transition: color 0.3s, background-color 0.3s;
@@ -361,10 +383,137 @@ div[class*="cursor"],
   background: transparent !important;
 }
 
+
 /* Fuerza cursor estándar */
 body, * {
   cursor: default !important;
 }
+
+/* Estilos para el formulario de contacto personalizado */
+.custom-contact-form {
+    padding: 20px; /* Ajusta según el relleno de tu Formidable Forms */
+    background-color: #ffffff; /* Color de fondo del formulario, ajusta si es diferente */
+    border-radius: 8px; /* Bordes redondeados, ajusta si es diferente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra, ajusta si es diferente */
+}
+
+.custom-contact-form .form-field-group {
+    margin-bottom: 15px;
+}
+
+.custom-contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600; /* Ajusta según tu tipografía Elementor */
+    color: #333; /* Color de texto de la etiqueta, ajusta */
+}
+
+.custom-contact-form input[type="text"],
+.custom-contact-form input[type="email"],
+.custom-contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd; /* Borde de los campos, ajusta */
+    border-radius: 5px; /* Bordes redondeados de los campos */
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box; /* Importante para padding y border en el ancho total */
+    background-color: #f9f9f9; /* Color de fondo de los campos */
+    color: #333;
+}
+
+  footer {
+    color: #000000 !important;
+  }
+
+  footer a,
+  footer p,
+  footer h1,
+  footer h2,
+  footer h3,
+  footer h4,
+  footer h5,
+  footer h6,
+  footer span,
+  footer strong {
+    color: #000000 !important;
+  }
+
+  footer a:hover {
+    color: #000000 !important;
+  }
+
+
+.custom-contact-form input[type="text"]:focus,
+.custom-contact-form input[type="email"]:focus,
+.custom-contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Color de enfoque, ajusta al de tu tema */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Sombra de enfoque */
+}
+  .custom-contact-form .elementor-button {
+        background-color: #5B84A3; /* Color de fondo del botón */
+        color: #ffffff; /* Color del texto */
+        border: none; /* Opcional: sin borde */
+    }
+
+    .custom-contact-form .elementor-button:hover {
+        background-color: #005bb5; /* Color al pasar el cursor */
+    }
+
+	  .custom-contact-form button.elementor-button {
+        background-color: #5B84A3!important;  /* Cambia este color a tu preferencia */
+        color: #ffffff !important;
+        border: none !important;
+        padding: 12px 24px !important;
+        font-weight: bold !important;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-contact-form button.elementor-button:hover {
+        background-color: #5B84A3 !important;  /* Color al hacer hover */
+    }
+.custom-contact-form .form-submit-group {
+    text-align: right; /* Alinea el botón a la derecha si lo deseas */
+    margin-top: 20px;
+}
+
+.custom-contact-form button.elementor-button {
+    /* Aquí puedes usar las clases de botón de Elementor o tus propios estilos */
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff; /* Color del botón, ajusta al de tu tema */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+
+.custom-contact-form button.elementor-button:hover {
+    background-color: #0056b3; /* <-- ESTE ES EL COLOR AL PASAR EL RATÓN */
+}
+.custom-contact-form button.elementor-button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el ratón */
+}
+
+/* Puedes añadir más estilos para hacer que se vea exactamente como Formidable Forms */
+
+
+/* Para la columna con data-id="5690208" */
+
+
+/* Para el overlay dentro de la columna específica */
+.elementor-element-5690208 .elementor-background-overlay {
+    background-color: #5B84A3 !important; /* Reemplaza por el color azul deseado */
+    opacity: 0.7; /* Ajusta la opacidad si es necesario */
+}
+
+
 </style>
 
 </style>
@@ -488,6 +637,11 @@ body::after,
 body, html, * {
   cursor: default !important;
 }
+
+/* Para cambiar el color del ícono en sí */
+.bdt-ep-advanced-icon-box-icon svg path {
+    fill: #5B84A3 ; /* Color de ejemplo: un tono de naranja. Cambia esto por el color que desees. */
+}
 </style>
 
 <script>
@@ -502,6 +656,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 </script>
 
 </body>
@@ -523,19 +678,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		        </div>
 		        <div class='uicore-nav-menu'>
             <div class="uicore-menu-container uicore-nav"><ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 current_page_item menu-item-21"><a href="index.html" aria-current="page"><span class="ui-menu-item-wrapper">Inicio</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="index.html"><span class="ui-menu-item-wrapper">Nosotros</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="index.html"><span class="ui-menu-item-wrapper">Servicios</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="index.html"><span class="ui-menu-item-wrapper">Porque elegirnos?</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="#nosotros"><span class="ui-menu-item-wrapper">Sobre Nosotros</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="#servicios"><span class="ui-menu-item-wrapper">Nuestros Servicios</span></a></li>
 
 </li>
 </ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">            <div class="uicore-cta-wrapper">
-				<a href=""
+				<a href="#contacto"
 					target="_self"
 					class="uicore-btn ">
                     <span class="elementor-button-text">
 						Contacto                    </span>
 				</a>
             </div>
+			
         </div>        </div>
 		<div class="uicore-mobile-head-right">            <button type="button" class="uicore-toggle uicore-ham" aria-label="mobile-menu">
                 <span class="bars">
@@ -567,10 +722,9 @@ document.addEventListener('DOMContentLoaded', () => {
 						<div class="elementor-element elementor-element-4f99131 elementor-widget-tablet__width-initial ui-e-a-animate elementor-invisible elementor-widget elementor-widget-highlighted-text" data-id="4f99131" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="highlighted-text.default">
 				<div class="elementor-widget-container">
 							<h1 data-delay="900" class="ui-e--highlighted-text" >
-        <span class="ui-e-headline-text elementor-repeater-item-dc068de">Gestión escolar con</span><span class="ui-e-headline-text elementor-repeater-item-ade6a67 ui-e-headline-stroke1">
+        <span class="ui-e-headline-text elementor-repeater-item-dc068de">Acompañamos la gestión escolar con visión </span><span class="ui-e-headline-text elementor-repeater-item-ade6a67 ui-e-headline-stroke1">
 									<span class="whitespace"></span>
-                                    <span>
-                                        <span class="ui-e-headline-text ui-e-headline-highlighted"> visión estratégica</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
+                                    <span><span class="ui-e-headline-text ui-e-headline-highlighted">estratégica</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
         				</div>
 				</div>
 					</div>
@@ -602,18 +756,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-da4421a ep-parallax-effects-yes elementor-invisible elementor-widget elementor-widget-image" data-id="da4421a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400,&quot;ep_parallax_effects_show&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-120,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_y_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_hue_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_sepia_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_easing_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_target&quot;:&quot;self&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img fetchpriority="high" decoding="async" width="2000" height="1119" src="https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago.jpg" class="attachment-full size-full wp-image-102" alt="Desarrolla tus negocios en Chile" srcset="https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago.jpg 2000w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-300x168.jpg 300w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-1024x573.jpg 1024w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-768x430.jpg 768w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-1536x859.jpg 1536w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-650x364.jpg 650w" sizes="(max-width: 2000px) 100vw, 2000px" />															</div>
+															<img fetchpriority="high" decoding="async" width="2000" height="1119" src="img/bannercordoba.jpg" class="attachment-full size-full wp-image-102" alt="Desarrolla tus negocios en Chile" srcset="img/bannercordoba.jpg 2000w, img/bannercordoba.jpg 300w, img/bannercordoba.jpg 1024w, img/bannercordoba.jpg 768w, img/bannercordoba.jpg 1536w,img/bannercordoba.jpg 650w" sizes="(max-width: 2000px) 100vw, 2000px" />															</div>
 				</div>
 				<div class="elementor-section elementor-inner-section elementor-element elementor-element-b43ead9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b43ead9" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-469840c" data-id="469840c" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-ef391bf elementor-widget__width-auto animated-slow bdt-motion-effect-yes elementor-invisible elementor-widget elementor-widget-image" data-id="ef391bf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-																<a href="#edge">
-							<img decoding="async" src="https://vault.uicore.co/company/wp-content/uploads/sites/15/2022/06/Company-Hero-Elipse.webp" title="" alt="" loading="lazy" />								</a>
-															</div>
-				</div>
+				
 					</div>
 		</div>
 					</div>
@@ -623,148 +773,83 @@ document.addEventListener('DOMContentLoaded', () => {
 					</div>
 		</div>
 		<div class="elementor-element elementor-element-1cfbab7 e-flex e-con-boxed e-con e-parent" data-id="1cfbab7" data-element_type="container">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-ce0d21d ui-e-a-animate elementor-widget elementor-widget-highlighted-text" data-id="ce0d21d" data-element_type="widget" data-widget_type="highlighted-text.default">
-				<div class="elementor-widget-container">
-							<h2 class="ui-e--highlighted-text" >
-        <span class="ui-e-headline-text elementor-repeater-item-00e63df">Alcance global: Clientes de </span><span class="ui-e-headline-text elementor-repeater-item-e000065 ui-e-headline-stroke1">
-									<span class="whitespace"></span>
-                                    <span>
-                                        <span class="ui-e-headline-text ui-e-headline-highlighted">más de 10 países</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span><span class="ui-e-headline-text elementor-repeater-item-22fda98">han escogido nuestros servicios</span>        </h2>
-        				</div>
-				</div>
-					</div>
-				</div>
-				<div class="elementor-section elementor-top-section elementor-element elementor-element-04ba18c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="04ba18c" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f5fe10c" data-id="f5fe10c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-715ddf0 elementor-widget elementor-widget-text-editor" data-id="715ddf0" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Nos especializamos en desarrollar soluciones que faciliten la apertura de filiales de empresas extranjeras en el país. <br /><span style="font-size: inherit; font-family: var( --e-global-typography-uicore_secondary-font-family ), Sans-serif; font-weight: var( --e-global-typography-uicore_secondary-font-weight ); background-color: rgba(255, 255, 255, 0); color: var(--uicore-typography--p-c,'#070707'); font-style: var(--uicore-typography--p-st,'normal'); letter-spacing: var(--uicore-typography--p-ls,'-0.027em'); text-transform: var(--uicore-typography--p-t,'none');">Ofrecemos asesoramiento para el establecimiento y  la ejecución de procesos administrativos durante el desarrollo de tu negocio. </span></p>								</div>
-				</div>
-				<div class="elementor-section elementor-inner-section elementor-element elementor-element-a5e85a4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a5e85a4" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-baf10a6" data-id="baf10a6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-31ebf64 elementor-invisible elementor-widget elementor-widget-image" data-id="31ebf64" data-element_type="widget" data-settings="{&quot;ep_floating_effects_show&quot;:&quot;yes&quot;,&quot;ep_floating_effects_translate_toggle&quot;:&quot;yes&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;ep_floating_effects_translate_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:0}},&quot;ep_floating_effects_translate_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:30}},&quot;ep_floating_effects_translate_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ep_floating_effects_translate_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_floating_effects_easing&quot;:&quot;easeInOutQuad&quot;}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img loading="lazy" decoding="async" width="730" height="400" src="https://www.taxmanager.cl/wp-content/uploads/2024/04/iStock-1727335145-Convertido-5.png" class="attachment-large size-large wp-image-147" alt="Mapa de nuestros clientes en el mundo" srcset="https://www.taxmanager.cl/wp-content/uploads/2024/04/iStock-1727335145-Convertido-5.png 730w, https://www.taxmanager.cl/wp-content/uploads/2024/04/iStock-1727335145-Convertido-5-300x164.png 300w, https://www.taxmanager.cl/wp-content/uploads/2024/04/iStock-1727335145-Convertido-5-650x356.png 650w" sizes="(max-width: 730px) 100vw, 730px" />															</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</div>
-					</div>
-		</div>
-					</div>
-		</div>
-				<div class="elementor-section elementor-top-section elementor-element elementor-element-f9dd146 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f9dd146" data-element_type="section" id="edge" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b3f858a" data-id="b3f858a" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-f0c6690 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="f0c6690" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Asesoramiento integral adaptado a sus necesidades</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-93c177d elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="93c177d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p></p>
-<p>Nuestros profesionales se encargan de gestionar de manera integral todos tus procesos administrativos y de cumplimiento, permitiéndote enfocarte en la operación y crecimiento de tu negocio.</p>								</div>
-				</div>
-				<div class="elementor-element elementor-element-584e1e7 elementor-view-default elementor-widget elementor-widget-icon" data-id="584e1e7" data-element_type="widget" data-settings="{&quot;ep_floating_effects_show&quot;:&quot;yes&quot;,&quot;ep_floating_effects_translate_toggle&quot;:&quot;yes&quot;,&quot;ep_floating_effects_translate_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:30}},&quot;ep_floating_effects_translate_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:0}},&quot;ep_floating_effects_translate_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ep_floating_effects_translate_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_floating_effects_easing&quot;:&quot;easeInOutQuad&quot;}" data-widget_type="icon.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-icon-wrapper">
-			<div class="elementor-icon">
-			<i aria-hidden="true" class="ti ti-arrow-right"></i>			</div>
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5690208 elementor-invisible" data-id="5690208" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:100}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-background-overlay"></div>
-						<section class="elementor-section elementor-inner-section elementor-element elementor-element-819236c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="819236c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:500}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ab16405" data-id="ab16405" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-0d0aaa8 elementor-widget elementor-widget-heading" data-id="0d0aaa8" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h3 class="elementor-heading-title elementor-size-default">Conversemos</h3>				</div>
-				</div>
-				<div class="elementor-element elementor-element-52c33b4 elementor-widget elementor-widget-text-editor" data-id="52c33b4" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Consulte por nuestros servicios o soluciones personalizadas para su proyecto.</p>								</div>
-				</div>
-				<div class="elementor-element elementor-element-7ff6a91 elementor-widget elementor-widget-formidable" data-id="7ff6a91" data-element_type="widget" data-widget_type="formidable.default">
-				<div class="elementor-widget-container">
-					<div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_2_container" data-token="488a00bf903a2b70e4e28e9a9961a7ab">
-<form enctype="multipart/form-data" method="post" class="frm-show-form " id="form_contacto" data-token="488a00bf903a2b70e4e28e9a9961a7ab">
-<div class="frm_form_fields ">
-<fieldset>
-<legend class="frm_screen_reader">Contacto</legend>
+  <div class="e-con-inner">
 
-<div class="frm_fields_container">
-<input type="hidden" name="frm_action" value="create" />
-<input type="hidden" name="form_id" value="2" />
-<input type="hidden" name="frm_hide_fields_2" id="frm_hide_fields_2" value="" />
-<input type="hidden" name="form_key" value="contacto" />
-<input type="hidden" name="item_meta[0]" value="" />
-<input type="hidden" id="frm_submit_entry_2" name="frm_submit_entry_2" value="5b525bcbd0" /><input type="hidden" name="_wp_http_referer" value="/" /><div id="frm_field_6_container" class="frm_form_field form-field  frm_required_field frm_top_container frm12 frm_first">
-	<label for="field_qh4icy2" id="field_qh4icy2_label" class="frm_primary_label">Nombre
-		<span class="frm_required" aria-hidden="true">*</span>
-	</label>
-	<input type="text" id="field_qh4icy2" name="item_meta[6]" value=""  data-reqmsg="Nombre cannot be blank." aria-required="true" data-invmsg="Nombre is invalid" aria-invalid="false"  />
-	
-	
-</div>
-<div id="frm_field_8_container" class="frm_form_field form-field  frm_required_field frm_top_container frm_full">
-	<label for="field_29yf4d2" id="field_29yf4d2_label" class="frm_primary_label">E-mail
-		<span class="frm_required" aria-hidden="true">*</span>
-	</label>
-	<input type="email" id="field_29yf4d2" name="item_meta[8]" value=""  data-reqmsg="E-mail cannot be blank." aria-required="true" data-invmsg="Please enter a valid email address" aria-invalid="false"  />
-	
-	
-</div>
-<div id="frm_field_10_container" class="frm_form_field form-field  frm_required_field frm_top_container frm_full">
-	<label for="field_9jv0r12" id="field_9jv0r12_label" class="frm_primary_label">Mensaje
-		<span class="frm_required" aria-hidden="true">*</span>
-	</label>
-	<textarea name="item_meta[10]" id="field_9jv0r12" rows="5"  data-reqmsg="Mensaje cannot be blank." aria-required="true" data-invmsg="Mensaje is invalid" aria-invalid="false"  ></textarea>
-	
-	
-</div>
-<div id="frm_field_11_container" class="frm_form_field form-field ">
-	<div class="frm_submit">
+    <!-- TITULAR DESTACADO -->
+    <div id="nosotros"   class="elementor-element elementor-element-ce0d21d ui-e-a-animate elementor-widget elementor-widget-highlighted-text" data-id="ce0d21d" data-element_type="widget" data-widget_type="highlighted-text.default">
+      <div class="elementor-widget-container">
+        <h2 class="ui-e--highlighted-text">
+          <span class="ui-e-headline-text">Somos aliados estratégicos de </span>
+          <span class="ui-e-headline-text ui-e-headline-stroke1">
+            <span class="whitespace"></span>
+            <span>
+              <span class="ui-e-headline-text ui-e-headline-highlighted">instituciones educativas</span>
+              <span class="uicore-svg-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+                  <path d="M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4" />
+                </svg>
+              </span>
+            </span>
+          </span>
+          <span class="ui-e-headline-text">que apuestan a una gestión más eficiente</span>
+        </h2>
+      </div>
+    </div>
 
-<button class="frm_button_submit" type="submit"  >Enviar</button>
+    <!-- TEXTO INFORMATIVO PRINCIPAL -->
+    <div class="elementor-section elementor-top-section elementor-element elementor-element-04ba18c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="04ba18c" data-element_type="section">
+      <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f5fe10c" data-id="f5fe10c" data-element_type="column">
+          <div class="elementor-widget-wrap elementor-element-populated">
 
-</div>
-</div>
-	<input type="hidden" name="item_key" value="" />
-				<div class="frm__6633c6061db62">
-				<label for="frm_email_2" >
-					If you are human, leave this field blank.				</label>
-				<input  id="frm_email_2" type="text" class="frm_verify" name="frm__6633c6061db62" value="" autocomplete="off"  />
-			</div>
-		</div>
-</fieldset>
+            <div class="elementor-element elementor-element-715ddf0 elementor-widget elementor-widget-text-editor" data-id="715ddf0" data-element_type="widget" data-widget_type="text-editor.default">
+              <div class="elementor-widget-container">
+                <p>
+                  En EDUKA acompañamos a las instituciones educativas en su crecimiento, haciéndonos cargo de sus procesos administrativos, financieros y contables. 
+                  <br />
+                  <span style="font-size: inherit; font-family: var(--e-global-typography-uicore_secondary-font-family), Sans-serif; font-weight: var(--e-global-typography-uicore_secondary-font-weight); background-color: rgba(255, 255, 255, 0); color: var(--uicore-typography--p-c,'#070707'); font-style: var(--uicore-typography--p-st,'normal'); letter-spacing: var(--uicore-typography--p-ls,'-0.027em'); text-transform: var(--uicore-typography--p-t,'none');">
+                    Nuestro servicio integral permite a las escuelas enfocarse en lo más importante: brindar una educación de calidad, mientras nosotros optimizamos su operativa interna con eficiencia, tecnología y transparencia.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- IMAGEN CON EFECTO -->
+            <div class="elementor-section elementor-inner-section elementor-element elementor-element-a5e85a4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a5e85a4" data-element_type="section">
+              <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-baf10a6" data-id="baf10a6" data-element_type="column">
+                  <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element elementor-element-31ebf64 elementor-invisible elementor-widget elementor-widget-image" data-id="31ebf64" data-element_type="widget" data-settings='{
+                      "ep_floating_effects_show":"yes",
+                      "ep_floating_effects_translate_toggle":"yes",
+                      "_animation":"zoomIn",
+                      "ep_floating_effects_translate_x":{"unit":"px","size":"","sizes":{"from":0,"to":0}},
+                      "ep_floating_effects_translate_y":{"unit":"px","size":"","sizes":{"from":0,"to":30}},
+                      "ep_floating_effects_translate_duration":{"unit":"px","size":1000,"sizes":[]},
+                      "ep_floating_effects_translate_delay":{"unit":"px","size":"","sizes":[]},
+                      "ep_floating_effects_easing":"easeInOutQuad"
+                    }' data-widget_type="image.default">
+                      <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="730" height="400" src="img/contacto-imagen.jpg" class="attachment-large size-large wp-image-147" alt="Mapa de instituciones" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div> <!-- .elementor-widget-wrap -->
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-</form>
-</div>
-				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-					</div>
-		</div>
-					</div>
-		</div>
-				<div class="elementor-section elementor-top-section elementor-element elementor-element-22c429c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="22c429c" data-element_type="section">
+			
+				<div id="servicios" class="elementor-section elementor-top-section elementor-element elementor-element-22c429c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="22c429c" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f06308f" data-id="f06308f" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -812,7 +897,7 @@ document.addEventListener('DOMContentLoaded', () => {
 									
 					<h3 class="bdt-ep-advanced-icon-box-title">
 				<span >
-					Consultoría de negocios				</span>
+					Gestión Administrativa Escolar			</span>
 			</h3>
 		
 
@@ -820,7 +905,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					
 				
 									<div class="bdt-ep-advanced-icon-box-description">
-						<p>Asistencia para establecer tu empresa y cumplir con regulaciones. Soluciones&nbsp; estratégicas y operativas para impulsar tu negocio.</p>					</div>
+						<p>Administramos procesos escolares: cobranzas, pagos, atención a familias, gestión de personal y más.&nbsp; Tu institución se dedica a educar; nosotros al resto.</p>					</div>
 				
 									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
 						
@@ -844,7 +929,9 @@ document.addEventListener('DOMContentLoaded', () => {
 					<div class="bdt-ep-advanced-icon-box-icon">
 				<span class="bdt-ep-advanced-icon-box-icon-wrap">
 
-
+<svg aria-hidden="true" class="e-font-icon-svg" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+    <path d="M544 0H32C14.33 0 0 14.33 0 32v448c0 17.67 14.33 32 32 32h512c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32zM128 416H64V256h64v160zm192 0h-64V256h64v160zm192 0h-64V256h64v160zM471.2 110.15c-11.72-6.52-25.26-10.15-39.2-10.15-46.73 0-84.8 38.07-84.8 84.8 0 17.75 5.56 34.34 15.11 48.24l-8.62 8.62c-3.13 3.13-3.13 8.19 0 11.31l14.14 14.14c3.13 3.13 8.19 3.13 11.31 0l8.62-8.62c13.9 9.55 30.49 15.11 48.24 15.11 46.73 0 84.8-38.07 84.8-84.8 0-13.94-3.63-27.48-10.15-39.2l30.29-30.29c3.13-3.13 3.13-8.19 0-11.31l-14.14-14.14c-3.13-3.13-8.19-3.13-11.31 0l-30.29 30.29zM400 192c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"></path>
+</svg>
 					
 						<i aria-hidden="true" class="ti ti-arrow-circle-up"></i>
 
@@ -857,7 +944,7 @@ document.addEventListener('DOMContentLoaded', () => {
 									
 					<h3 class="bdt-ep-advanced-icon-box-title">
 				<span >
-					Asesoría tributaria				</span>
+					Contabilidad y Finanzas Educativas		</span>
 			</h3>
 		
 
@@ -865,7 +952,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					
 				
 									<div class="bdt-ep-advanced-icon-box-description">
-						<p>Nuestros especialistas tributarios brindan asesoramiento experto para optimizar tu carga fiscal y cumplir con las obligaciones tributarias.</p>					</div>
+						<p>Elaboramos informes contables, flujos de fondos, presupuestos y conciliaciones bancarias. Todo cumpliendo con las normativas del sector educativo.</p>					</div>
 				
 									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
 						
@@ -902,7 +989,7 @@ document.addEventListener('DOMContentLoaded', () => {
 									
 					<h3 class="bdt-ep-advanced-icon-box-title">
 				<span >
-					Backoffice y Tesorería				</span>
+					Digitalización de Procesos	</span>
 			</h3>
 		
 
@@ -910,7 +997,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					
 				
 									<div class="bdt-ep-advanced-icon-box-description">
-						<p>Nos encargamos de tus procesos administrativos y financieros, como facturación, pagos, cobros, conciliaciones y otros.</p>					</div>
+						<p>Usamos tecnología como Aulica para automatizar tareas administrativas, reducir morosidad y mejorar la eficiencia operativa escolar.</p>					</div>
 				
 									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
 						
@@ -947,7 +1034,7 @@ document.addEventListener('DOMContentLoaded', () => {
 									
 					<h3 class="bdt-ep-advanced-icon-box-title">
 				<span >
-					Contabilidad				</span>
+					Gestión de Proveedores		</span>
 			</h3>
 		
 
@@ -955,7 +1042,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					
 				
 									<div class="bdt-ep-advanced-icon-box-description">
-						<p>Adaptada a la normativa chilena y otros estándares requeridos. Reportes financieros personalizados según las necesidades de tu empresa.</p>					</div>
+						<p>Negociamos y gestionamos contrataciones con proveedores confiables. Aseguramos calidad, cumplimiento y ahorro para tu institución.</p>					</div>
 				
 									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
 						
@@ -1011,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', () => {
 									
 					<h3 class="bdt-ep-advanced-icon-box-title">
 				<span >
-					Remuneraciones				</span>
+					Gestión de Recursos Humanos		</span>
 			</h3>
 		
 
@@ -1019,7 +1106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					
 				
 									<div class="bdt-ep-advanced-icon-box-description">
-						<p>Optimiza el proceso de remuneraciones con nosotros. Nos encargamos del cálculo de nómina, imposiciones, impuestos y cumplimiento en la DT.</p>					</div>
+						<p>Administramos todo el ciclo de vida del personal: altas, bajas, contratos, liquidación de sueldos y cumplimiento normativo. Nos aseguramos de que tu equipo docente y administrativo esté respaldado y en regla.</p>					</div>
 				
 									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
 						
@@ -1056,7 +1143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 									
 					<h3 class="bdt-ep-advanced-icon-box-title">
 				<span >
-					Recursos Humanos				</span>
+					Atención Personalizada a Familias	</span>
 			</h3>
 		
 
@@ -1064,7 +1151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					
 				
 									<div class="bdt-ep-advanced-icon-box-description">
-						<p>Fortalece el contacto con tu equipo, potencia el desarrollo organizacional y ahorra recursos delegando tareas laborales administrativas.&nbsp;</p>					</div>
+						<p>Brindamos un servicio de atención al cliente ágil, cordial y resolutivo, para padres, madres y responsables. Canalizamos consultas, cobranzas y gestiones con empatía y profesionalismo.&nbsp;</p>					</div>
 				
 									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
 						
@@ -1088,6 +1175,9 @@ document.addEventListener('DOMContentLoaded', () => {
 					<div class="bdt-ep-advanced-icon-box-icon">
 				<span class="bdt-ep-advanced-icon-box-icon-wrap">
 
+<svg aria-hidden="true" class="e-font-icon-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <path d="M500.3 443.7l-119.7-119.7c27.2-40.4 40.6-89.9 40.6-141.7C421.2 90.6 331.1 0.5 210.5 0.5S0 90.6 0 211.2s90.1 210.7 210.7 210.7c51.8 0 101.3-13.4 141.7-40.6l119.7 119.7c3 3 7.8 4.7 11.3 1.7 3.6-3 5.2-7.7 1.7-11.3zM210.5 371.7c-88.2 0-160-71.8-160-160s71.8-160 160-160 160 71.8 160 160-71.8 160-160 160zm96-224h-32c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v32c0 6.6-5.4 12-12 12zm-192 0h-32c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v32c0 6.6-5.4 12-12 12zm96 192c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v32c0 6.6-5.4 12-12 12h-32zM114.3 274.3c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v32c0 6.6-5.4 12-12 12h-32zm192 0c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v32c0 6.6-5.4 12-12 12h-32z"/>
+        </svg>
 
 					
 						<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
@@ -1101,7 +1191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 									
 					<h3 class="bdt-ep-advanced-icon-box-title">
 				<span >
-					Cumplimiento tributario				</span>
+				Auditorías y Control de Morosidad		</span>
 			</h3>
 		
 
@@ -1109,7 +1199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					
 				
 									<div class="bdt-ep-advanced-icon-box-description">
-						<p>Gestionamos tus impuestos mensuales (IVA, Retenciones y otros) y anuales (declaración renta y DDJJ).</p>					</div>
+						<p>Realizamos auditorías jurídicas y contables para asegurar el control de las cuotas y matrículas. Disminuí la morosidad sin comprometer la relación con las familias.</p>					</div>
 				
 									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
 						
@@ -1146,7 +1236,7 @@ document.addEventListener('DOMContentLoaded', () => {
 									
 					<h3 class="bdt-ep-advanced-icon-box-title">
 				<span >
-					Representación Legal				</span>
+					Supervisión de Cumplimiento Institucional	</span>
 			</h3>
 		
 
@@ -1174,8 +1264,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		</div>
 					</div>
 		</div>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-8827074 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8827074" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-							<div class="elementor-background-overlay"></div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8827074 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+  data-id="8827074"
+  data-element_type="section"
+  style="background-image: url('img/carousel-1.jpg'); background-size: cover; background-position: center;" class="elementor-section elementor-top-section elementor-element elementor-element-8827074 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8827074" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"</div>
+  <div class="elementor-background-overlay"></div>
+  ...
+
+</div>
+							
 							<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a19aebd" data-id="a19aebd" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -1185,306 +1283,162 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="ui-e-headline-text elementor-repeater-item-9d4da75 ui-e-headline-stroke1">
 									<span class="whitespace"></span>
                                     <span>
-                                        <span class="ui-e-headline-text ui-e-headline-highlighted">Simplifiquemos </span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span><span class="ui-e-headline-text elementor-repeater-item-9a25cf9">la gestión </span><span class="ui-e-headline-text elementor-repeater-item-dba157b">y el</span><span class="ui-e-headline-text elementor-repeater-item-2bdfaa6 ui-e-headline-stroke1">
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">Impulsamos </span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span><span class="ui-e-headline-text elementor-repeater-item-9a25cf9">la educación </span><br><span class="ui-e-headline-text elementor-repeater-item-dba157b">a través de una</span>b<span class="ui-e-headline-text elementor-repeater-item-2bdfaa6 ui-e-headline-stroke1">
 									<span class="whitespace"></span>
                                     <span>
-                                        <span class="ui-e-headline-text ui-e-headline-highlighted">cumplimiento</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">gestión eficiente</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
         				</div>
 				</div>
 					</div>
 		</div>
 					</div>
 		</section>
-				<div class="elementor-section elementor-top-section elementor-element elementor-element-78530d1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="78530d1" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ae016e9" data-id="ae016e9" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-3abc618 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="3abc618" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Nuestra propuesta de trabajo se basa en brindar un <strong>servicio integral</strong> y asesoramiento <strong>personalizado</strong>.</p>
-<p>Promovemos el establecimiento de <strong>relaciones colaborativas y de confianza</strong> con nuestros clientes a través de una asistencia continua.</p>								</div>
-				</div>
-				<div class="elementor-section elementor-inner-section elementor-element elementor-element-9ca24a6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9ca24a6" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-cb27945" data-id="cb27945" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-4966bb2 elementor-widget elementor-widget-bdt-advanced-counter" data-id="4966bb2" data-element_type="widget" data-widget_type="bdt-advanced-counter.default">
-				<div class="elementor-widget-container">
-							<div class="bdt-ep-advanced-counter" data-settings="{&quot;id&quot;:&quot;bdt-ep-advanced-counter-data-4966bb2&quot;,&quot;countStart&quot;:1,&quot;countNumber&quot;:50,&quot;language&quot;:[&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;],&quot;duration&quot;:&quot;2&quot;,&quot;useEasing&quot;:&quot;yes&quot;,&quot;useGrouping&quot;:&quot;no&quot;,&quot;decimalSymbol&quot;:&quot;.&quot;,&quot;counterSuffix&quot;:&quot;+&quot;}">
-									
-							<div class="bdt-ep-advanced-counter-content">
-									
-					<div class="bdt-ep-advanced-counter-number">
-				<span class="bdt-count-this" id="bdt-ep-advanced-counter-data-4966bb2" >
-					50				</span>
-			</div>
-																				<p class="bdt-ep-advanced-counter-text">
-						Proyectos realizados					</p>
-							</div>
-		</div>
-
+				
+			<div id="contacto" class="elementor-section elementor-top-section elementor-element elementor-element-f9dd146 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f9dd146" data-element_type="section" id="edge" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b3f858a" data-id="b3f858a" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-f0c6690 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="f0c6690" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Asesoramiento integral adaptado a tu institución</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-93c177d elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="93c177d" data-element_type="widget" data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <p></p>
+                        <p>Nuestro equipo se encarga de gestionar de forma integral todos los procesos administrativos, contables y de cumplimiento normativo de tu institución educativa. Así, podés concentrarte plenamente en lo más importante: la educación y el crecimiento de tu comunidad escolar.</p>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-584e1e7 elementor-view-default elementor-widget elementor-widget-icon" data-id="584e1e7" data-element_type="widget" data-settings="{&quot;ep_floating_effects_show&quot;:&quot;yes&quot;,&quot;ep_floating_effects_translate_toggle&quot;:&quot;yes&quot;,&quot;ep_floating_effects_translate_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:30}},&quot;ep_floating_effects_translate_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:0}},&quot;ep_floating_effects_translate_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ep_floating_effects_translate_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_floating_effects_easing&quot;:&quot;easeInOutQuad&quot;}" data-widget_type="icon.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-icon-wrapper">
+                            <div class="elementor-icon">
+                                <i aria-hidden="true" class="ti ti-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5690208 elementor-invisible" data-id="5690208" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:100}">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-background-overlay"></div>
+                <section class="elementor-section elementor-inner-section elementor-element elementor-element-819236c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="819236c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:500}">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ab16405" data-id="ab16405" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-0d0aaa8 elementor-widget elementor-widget-heading" data-id="0d0aaa8" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h3 class="elementor-heading-title elementor-size-default">Conversemos</h3>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-52c33b4 elementor-widget elementor-widget-text-editor" data-id="52c33b4" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>Consultá por nuestros servicios personalizados según las necesidades de tu institución. En EDUKA estamos para acompañarte en cada etapa del camino.</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-widget elementor-widget-html" data-id="your-new-form-id" data-element_type="widget" data-widget_type="html.default">
+                                    <div class="elementor-widget-container">
+                                        <form id="contact-form" action="send_mail.php" method="POST" class="custom-contact-form">
+                                            <div class="form-field-group">
+                                                <label for="name">Nombre</label>
+                                                <input type="text" id="name" name="name" required>
+                                            </div>
+                                            <div class="form-field-group">
+                                                <label for="email">E-mail</label>
+                                                <input type="email" id="email" name="email" required>
+                                            </div>
+                                            <div class="form-field-group">
+                                                <label for="message">Mensaje</label>
+                                                <textarea id="message" name="message" rows="5" required></textarea>
+                                            </div>
+                                            <div class="form-submit-group">
+                                                <button type="submit" class="elementor-button elementor-button-link">Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
 		
-				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4b6b15f" data-id="4b6b15f" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-f7d1829 elementor-widget__width-initial elementor-widget elementor-widget-bdt-advanced-counter" data-id="f7d1829" data-element_type="widget" data-widget_type="bdt-advanced-counter.default">
-				<div class="elementor-widget-container">
-							<div class="bdt-ep-advanced-counter" data-settings="{&quot;id&quot;:&quot;bdt-ep-advanced-counter-data-f7d1829&quot;,&quot;countStart&quot;:1,&quot;countNumber&quot;:10,&quot;language&quot;:[&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;],&quot;duration&quot;:&quot;2&quot;,&quot;useEasing&quot;:&quot;yes&quot;,&quot;useGrouping&quot;:&quot;no&quot;,&quot;decimalSymbol&quot;:&quot;.&quot;,&quot;counterSuffix&quot;:&quot;+&quot;}">
-									
-							<div class="bdt-ep-advanced-counter-content">
-									
-					<div class="bdt-ep-advanced-counter-number">
-				<span class="bdt-count-this" id="bdt-ep-advanced-counter-data-f7d1829" >
-					10				</span>
-			</div>
-																				<p class="bdt-ep-advanced-counter-text">
-						Países, alcance global					</p>
-							</div>
-		</div>
+		<footer id="uicore-tb-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+  <div class="elementor elementor-20">
 
-		
-				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-54318e8" data-id="54318e8" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-98d2144 animated-slow elementor-widget-divider--view-line elementor-invisible elementor-widget elementor-widget-divider" data-id="98d2144" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-							<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-0e81f10" data-id="0e81f10" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-201ef93 ep-parallax-effects-yes elementor-invisible elementor-widget elementor-widget-image" data-id="201ef93" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;ep_parallax_effects_show&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_rotate_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-180,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:235,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:5.6,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_hue_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_easing&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_easing_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.5,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_sepia_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_target&quot;:&quot;self&quot;}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-																<a href="#">
-							<img loading="lazy" decoding="async" width="196" height="196" src="https://www.taxmanager.cl/wp-content/uploads/2024/04/fav_icon2.png" class="attachment-full size-full wp-image-95" alt="Logotipo Taxmanager" srcset="https://www.taxmanager.cl/wp-content/uploads/2024/04/fav_icon2.png 196w, https://www.taxmanager.cl/wp-content/uploads/2024/04/fav_icon2-150x150.png 150w" sizes="(max-width: 196px) 100vw, 196px" />								</a>
-															</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</div>
-					</div>
-		</div>
-					</div>
-		</div>
-				<div class="elementor-section elementor-top-section elementor-element elementor-element-e79b2a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e79b2a2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5858c7e" data-id="5858c7e" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-b0e4421 elementor-widget elementor-widget-heading" data-id="b0e4421" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Blog</h2>				</div>
-				</div>
-				<div class="elementor-element elementor-element-e178d7e elementor-widget elementor-widget-uicore-post-grid" data-id="e178d7e" data-element_type="widget" data-widget_type="uicore-post-grid.default">
-				<div class="elementor-widget-container">
-					<div class="uicore-grid-container uicore-blog-grid uicore-grid-row uicore-horizontal uicore-landscape-ratio uicore-medium-space animate-2 ui-st-simple uicore-blog-widget">
-            <div class="uicore-grid-item uicore-col-md-6 uicore-col-lg-6  uicore-zoom uicore-animate post-855 post type-post status-publish format-standard has-post-thumbnail hentry category-tributario tag-declaracion-renta tag-declaracion-renta-2025 tag-declaraciones-juradas tag-operacion-renta tag-renta tag-renta-2025 tag-taxmanager tag-taxmanager-renta" >
-                <article class="uicore-post">
-                    <div class="uicore-post-wrapper">
+    <!-- SECCIÓN DE CONTACTO -->
+    <section class="elementor-section elementor-top-section elementor-element elementor-section-boxed elementor-section-height-default">
+      <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element">
+          <div class="elementor-widget-wrap elementor-element-populated">
 
-                        <a href="https://www.taxmanager.cl/2025/03/21/declaracion-renta-2025-en-chile/" title=" View Post: Declaración Renta 2025 en Chile: ¿Quienes deben declarar?" >  <div class="uicore-blog-img-container uicore-zoom-wrapper">
-                                            <div class="uicore-cover-img" style="background-image: url(https://www.taxmanager.cl/wp-content/uploads/2025/03/Logotipo_Servicio_de_Impuestos_Internos.svg.png)"></div>
-                                        </div></a>
-                        <div class="uicore-post-info">
-                            <div class="uicore-post-info-wrapper">
-                                <a href="https://www.taxmanager.cl/2025/03/21/declaracion-renta-2025-en-chile/" title="View Post: Declaración Renta 2025 en Chile: ¿Quienes deben declarar? ">                              <h4 class="uicore-post-title"><span>Declaración Renta 2025 en Chile: ¿Quienes deben declarar?</span></h4>
-                              </a><div class="uicore-post-footer uicore-body"><span>1 min read</span></div>                            </div>
-                        </div>
-
-                    </div>
-                </article>
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <div class="elementor-element elementor-widget elementor-widget-heading">
+              <div class="elementor-widget-container">
+                <h4 class="elementor-heading-title elementor-size-default">Contacto</h4>
+              </div>
             </div>
-        
-            <div class="uicore-grid-item uicore-col-md-6 uicore-col-lg-6  uicore-zoom uicore-animate post-695 post type-post status-publish format-standard has-post-thumbnail hentry category-gestion-de-negocios tag-international-desk tag-international-desk-empresa-chilena tag-international-desk-en-chile tag-servicios-international-desk" >
-                <article class="uicore-post">
-                    <div class="uicore-post-wrapper">
 
-                        <a href="https://www.taxmanager.cl/2025/03/06/international-desk-para-tu-empresa-en-chile/" title=" View Post: International Desk para tu empresa en Chile" >  <div class="uicore-blog-img-container uicore-zoom-wrapper">
-                                            <div class="uicore-cover-img" style="background-image: url(https://www.taxmanager.cl/wp-content/uploads/2025/02/cristian-castillo-BTPsf2WnWRs-unsplash-433x650.jpg)"></div>
-                                        </div></a>
-                        <div class="uicore-post-info">
-                            <div class="uicore-post-info-wrapper">
-                                <a href="https://www.taxmanager.cl/2025/03/06/international-desk-para-tu-empresa-en-chile/" title="View Post: International Desk para tu empresa en Chile ">                              <h4 class="uicore-post-title"><span>International Desk para tu empresa en Chile</span></h4>
-                              </a><div class="uicore-post-footer uicore-body"><span>1 min read</span></div>                            </div>
-                        </div>
-
-                    </div>
-                </article>
+            <div class="elementor-element elementor-widget elementor-widget-text-editor">
+              <div class="elementor-widget-container">
+                <p><strong>Dirección:</strong> Juan Antonio Lavalleja 781, Córdoba, Argentina</p>
+                <p><strong>Teléfono:</strong> <a href="https://wa.me/543516450842" target="_blank">+54 9 351 645-0842</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@somoseduka.com">info@somoseduka.com</a></p>
+              </div>
             </div>
-        
-            <div class="uicore-grid-item uicore-col-md-6 uicore-col-lg-6  uicore-zoom uicore-animate post-691 post type-post status-publish format-standard has-post-thumbnail hentry category-tributario tag-at-2025 tag-calendario-declaraciones-juradas tag-operacion-renta tag-operacion-renta-at-2025 tag-operacion-renta-taxmanager tag-taxmanager" >
-                <article class="uicore-post">
-                    <div class="uicore-post-wrapper">
 
-                        <a href="https://www.taxmanager.cl/2025/03/03/operacion-renta-at-2025-tips-declaraciones-juradas-marzo/" title=" View Post: Operación Renta AT 2025: Tips para las Declaraciones Juradas de marzo" >  <div class="uicore-blog-img-container uicore-zoom-wrapper">
-                                            <div class="uicore-cover-img" style="background-image: url(https://www.taxmanager.cl/wp-content/uploads/2025/02/towfiqu-barbhuiya-bwOAixLG0uc-unsplash-650x434.jpg)"></div>
-                                        </div></a>
-                        <div class="uicore-post-info">
-                            <div class="uicore-post-info-wrapper">
-                                <a href="https://www.taxmanager.cl/2025/03/03/operacion-renta-at-2025-tips-declaraciones-juradas-marzo/" title="View Post: Operación Renta AT 2025: Tips para las Declaraciones Juradas de marzo ">                              <h4 class="uicore-post-title"><span>Operación Renta AT 2025: Tips para las Declaraciones Juradas de marzo</span></h4>
-                              </a><div class="uicore-post-footer uicore-body"><span>2 min read</span></div>                            </div>
-                        </div>
+          </div>
+        </div>
 
-                    </div>
-                </article>
+        <!-- MAPA GOOGLE MAPS -->
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element">
+          <div class="elementor-widget-wrap elementor-element-populated">
+
+            <div class="elementor-element elementor-widget elementor-widget-html">
+              <div class="elementor-widget-container">
+                <iframe
+                  src="https://www.google.com/maps?q=Juan+Antonio+Lavalleja+781,+Córdoba,+Argentina&output=embed"
+                  width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
-        </div>				</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</div>
-				</div>
-		            </main>
-        </article>
-        
-</div><!-- #primary -->
 
+          </div>
+        </div>
+      </div>
+    </section>
 
-	</div><!-- #content -->
+    <!-- COPYRIGHT -->
+    <section class="elementor-section elementor-top-section elementor-element elementor-section-boxed elementor-section-height-default">
+      <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element">
+          <div class="elementor-widget-wrap elementor-element-populated">
 
-	            <footer id="uicore-tb-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
-			    		<div data-elementor-type="uicore-tb" data-elementor-id="20" class="elementor elementor-20">
-						<section class="elementor-section elementor-top-section elementor-element elementor-element-bb7bf1d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bb7bf1d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-01ad683" data-id="01ad683" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-c28a70f elementor-widget elementor-widget-image" data-id="c28a70f" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img width="800" height="150" src="https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco.png" class="attachment-full size-full wp-image-172" alt="" srcset="https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco.png 800w, https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco-300x56.png 300w, https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco-768x144.png 768w, https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco-650x122.png 650w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-5f30ab3 elementor-widget elementor-widget-text-editor" data-id="5f30ab3" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<p>Apoyando el desarrollo de tu negocio en Chile</p>								</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ff9466c" data-id="ff9466c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-f3d4d4a elementor-widget elementor-widget-heading" data-id="f3d4d4a" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Empresa</h4>				</div>
-				</div>
-				<div class="elementor-element elementor-element-c3d20b9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c3d20b9" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://www.taxmanager.cl/site/about/">
+            <div class="elementor-element elementor-widget elementor-widget-text-editor">
+              <div class="elementor-widget-container">
+                <p>Somos Eduka. Todos los derechos reservados. Web diseñada por <a href="https://www.linkedin.com/in/samuelchavero" target="_blank">Samuel Chavero</a>.</p>
+              </div>
+            </div>
 
-											<span class="elementor-icon-list-text">Acerca de Nosotros</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.taxmanager.cl/site/contact/">
+          </div>
+        </div>
+      </div>
+    </section>
 
-											<span class="elementor-icon-list-text">Contacto</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-2d87b23" data-id="2d87b23" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-5321937 elementor-widget elementor-widget-heading" data-id="5321937" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Servicios</h4>				</div>
-				</div>
-				<div class="elementor-element elementor-element-e8b4052 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e8b4052" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://www.taxmanager.cl/site/outsourcing/">
+  </div>
+</footer>
 
-											<span class="elementor-icon-list-text">Outsourcing</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.taxmanager.cl/site/cumplimiento-normativo/">
-
-											<span class="elementor-icon-list-text">Cumplimiento normativo</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.taxmanager.cl/site/asesoria-tributaria/">
-
-											<span class="elementor-icon-list-text">Asesoría Tributaria</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.taxmanager.cl/site/gestion-negocios/">
-
-											<span class="elementor-icon-list-text">Gestión de Negocios</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-929cc92" data-id="929cc92" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-602f2cc elementor-widget elementor-widget-heading" data-id="602f2cc" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-					<h4 class="elementor-heading-title elementor-size-default">Síguenos</h4>				</div>
-				</div>
-				<div class="elementor-element elementor-element-70085f0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="70085f0" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://www.linkedin.com/company/taxmanager-cl/">
-
-											<span class="elementor-icon-list-text">LinkedIn</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.instagram.com/taxmanagercl/">
-
-											<span class="elementor-icon-list-text">Instagram</span>
-											</a>
-									</li>
-						</ul>
-						</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</section>
-				<div class="elementor-section elementor-top-section elementor-element elementor-element-f1d658e elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f1d658e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ce6cf99" data-id="ce6cf99" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-9034635 elementor-widget elementor-widget-text-editor" data-id="9034635" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									&copy; 2025 · UiCore · <a href="https://www.uicore.co/ " target="_blank" title="UiCore">Premium WordPress Themes</a>								</div>
-				</div>
-					</div>
-		</div>
-					</div>
-		</div>
-				</div>
-				    </footer>
-            <!-- 1.5 uicore_content_end -->
-</div><!-- #page -->
 
 <div id="uicore-back-to-top" class="uicore-back-to-top uicore-i-arrow uicore_hide_mobile "></div>        <div class="uicore-navigation-wrapper uicore-navbar elementor-section elementor-section-boxed uicore-mobile-menu-wrapper
                 ">
 			<nav class="uicore elementor-container">
 				<div class="uicore-branding uicore-mobile">
-                                            <a href="https://www.taxmanager.cl/" rel="home">
-                            <img class="uicore uicore-logo"  src="https://www.taxmanager.cl/wp-content/uploads/2024/04/header2.png" alt="Taxmanager"/>
+                                            <a href="index.html" rel="home">
+                            <img class="uicore uicore-logo"  src="img/logo.png" alt="Taxmanager"/>
                         </a>
                     				</div>
 
