@@ -239,6 +239,91 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style id='wp-emoji-styles-inline-css'>
 
 
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25d366;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-icon:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 767px) {
+    .whatsapp-icon {
+      width: 50px;
+      height: 50px;
+      padding: 6px;
+    }
+
+    .whatsapp-float {
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+@media (min-width: 768px) {
+  .bdt-ep-advanced-icon-box-content {
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left; /* Cambiar a center si querés centrar todo */
+  }
+
+  .bdt-ep-advanced-icon-box-title {
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    font-size: 24px; /* Podés ajustar */
+    line-height: 1.2;
+  }
+
+  .bdt-ep-advanced-icon-box-title span {
+    display: inline-block;
+  }
+
+  .bdt-ep-advanced-icon-box-description {
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .bdt-ep-advanced-icon-box-description p {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .bdt-ep-advanced-icon-box-readmore {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+
+  .centrar-texto-destacado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .centrar-texto-destacado h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
 
 /* En pantallas chicas, evitar el salto entre 'con' y 'visión estratégica' */
 @media (max-width: 768px) {
@@ -513,6 +598,33 @@ body, * {
     background-color: #5B84A3 !important; /* Reemplaza por el color azul deseado */
     opacity: 0.7; /* Ajusta la opacidad si es necesario */
 }
+/* Aplica solo en pantallas mayores a 768px (desktop) */
+@media (min-width: 768px) {
+  #contacto .elementor-widget-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #contacto .elementor-column {
+    padding: 0 !important;
+  }
+
+  #contacto h2.elementor-heading-title {
+    margin-bottom: 10px !important;
+    text-align: left; /* O center si querés centrar el título */
+  }
+
+  #contacto p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  #contacto .elementor-element {
+    margin-bottom: 10px !important;
+  }
+}
 
 
 </style>
@@ -778,7 +890,32 @@ document.addEventListener('DOMContentLoaded', () => {
 		<div class="elementor-element elementor-element-1cfbab7 e-flex e-con-boxed e-con e-parent" data-id="1cfbab7" data-element_type="container">
   <div class="e-con-inner">
 
-   
+						<div id="nosotros"  class="elementor-element elementor-element-4f99131 elementor-widget-tablet__width-initial ui-e-a-animate elementor-invisible elementor-widget elementor-widget-highlighted-text centrar-texto-destacado" data-id="4f99131" data-element_type="widget" data-settings='{"_animation":"fadeInDown"}' data-widget_type="highlighted-text.default">
+
+  <h1 data-delay="900" class="ui-e--highlighted-text">
+    <span class="ui-e-headline-text elementor-repeater-item-dc068de">
+      Compromiso real <br>con la  
+    </span>
+    <span class="ui-e-headline-text elementor-repeater-item-ade6a67 ui-e-headline-stroke1">
+      <span class="whitespace"></span>
+      <span>
+        <span class="ui-e-headline-text ui-e-headline-highlighted">educacion</span>
+		
+        <span class="uicore-svg-wrapper">
+			
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' />
+          </svg>
+		   <span class="ui-e-headline-text elementor-repeater-item-dc068de">
+privada
+    </span>
+        </span>
+      </span>
+      <span class="whitespace"> </span>
+    </span>
+  </h1>
+
+</div>
 
     <!-- TEXTO INFORMATIVO PRINCIPAL -->
     <div class="elementor-section elementor-top-section elementor-element elementor-element-04ba18c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="04ba18c" data-element_type="section">
@@ -798,30 +935,28 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
             </div>
 
-            <!-- IMAGEN CON EFECTO -->
-            <div class="elementor-section elementor-inner-section elementor-element elementor-element-a5e85a4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a5e85a4" data-element_type="section">
-              <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-baf10a6" data-id="baf10a6" data-element_type="column">
-                  <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-31ebf64 elementor-invisible elementor-widget elementor-widget-image" data-id="31ebf64" data-element_type="widget" data-settings='{
-                      "ep_floating_effects_show":"yes",
-                      "ep_floating_effects_translate_toggle":"yes",
-                      "_animation":"zoomIn",
-                      "ep_floating_effects_translate_x":{"unit":"px","size":"","sizes":{"from":0,"to":0}},
-                      "ep_floating_effects_translate_y":{"unit":"px","size":"","sizes":{"from":0,"to":30}},
-                      "ep_floating_effects_translate_duration":{"unit":"px","size":1000,"sizes":[]},
-                      "ep_floating_effects_translate_delay":{"unit":"px","size":"","sizes":[]},
-                      "ep_floating_effects_easing":"easeInOutQuad"
-                    }' data-widget_type="image.default">
-                      <div class="elementor-widget-container">
-                        <img loading="lazy" decoding="async" width="730" height="400" src="img/contacto-imagen.jpg" class="attachment-large size-large wp-image-147" alt="Mapa de instituciones" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <div class="elementor-section elementor-top-section elementor-element elementor-element-f4f582e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="f4f582e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b1e5bbc" data-id="b1e5bbc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-da4421a ep-parallax-effects-yes elementor-invisible elementor-widget elementor-widget-image" data-id="da4421a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400,&quot;ep_parallax_effects_show&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-120,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_y_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_hue_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_sepia_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_easing_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_target&quot;:&quot;self&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="2000" height="1119" src="img/contacto-imagen.jpg" class="attachment-full size-full wp-image-102" alt="Desarrolla tus negocios en Chile" srcset="img/contacto-imagen.jpg 2000w, img/contacto-imagen.jpg 300w, img/contacto-imagen.jpg 1024w, iimg/contacto-imagen.jpg 768w, img/contacto-imagen.jpg 1536w,img/contacto-imagen.jpg 650w" sizes="(max-width: 2000px) 100vw, 2000px" />															</div>
+				</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-b43ead9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b43ead9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-469840c" data-id="469840c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ef391bf elementor-widget__width-auto animated-slow bdt-motion-effect-yes elementor-invisible elementor-widget elementor-widget-image" data-id="ef391bf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				
+					</div>
+		</div>
+					</div>
+		</div>
+					</div>
+		</div>
+					</div>
+		</div>
             
 
           </div> <!-- .elementor-widget-wrap -->
@@ -889,7 +1024,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					
 				
 									<div class="bdt-ep-advanced-icon-box-description">
-						<p>Administramos procesos escolares: cobranzas, pagos, atención a familias, gestión de personal y más.&nbsp; Tu institución se dedica a educar; nosotros al resto.</p>					</div>
+						<p>Administramos procesos escolares: cobranzas, pagos, atención a familias, gestión de personal y más.Tu institución se dedica a educar; nosotros al resto.</p>					</div>
 				
 									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
 						
@@ -1267,7 +1402,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="ui-e-headline-text elementor-repeater-item-9d4da75 ui-e-headline-stroke1">
 									<span class="whitespace"></span>
                                     <span>
-                                        <span class="ui-e-headline-text ui-e-headline-highlighted">Impulsamos </span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span><span class="ui-e-headline-text elementor-repeater-item-9a25cf9">la educación </span><br><span class="ui-e-headline-text elementor-repeater-item-dba157b">a través de una</span>b<span class="ui-e-headline-text elementor-repeater-item-2bdfaa6 ui-e-headline-stroke1">
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">Impulsamos </span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span><span class="ui-e-headline-text elementor-repeater-item-9a25cf9">la educación </span><br><span class="ui-e-headline-text elementor-repeater-item-dba157b">a través de una</span>.&nbsp;<span class="ui-e-headline-text elementor-repeater-item-2bdfaa6 ui-e-headline-stroke1">
 									<span class="whitespace"></span>
                                     <span>
                                         <span class="ui-e-headline-text ui-e-headline-highlighted">gestión eficiente</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
@@ -1318,8 +1453,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                                 <div class="elementor-element elementor-element-52c33b4 elementor-widget elementor-widget-text-editor" data-id="52c33b4" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        <p>Consultá por nuestros servicios personalizados según las necesidades de tu institución. En EDUKA estamos para acompañarte en cada etapa del camino.</p>
-                                    </div>
+                                          </div>
                                 </div>
                                 <div class="elementor-element elementor-widget elementor-widget-html" data-id="your-new-form-id" data-element_type="widget" data-widget_type="html.default">
                                     <div class="elementor-widget-container">
@@ -1404,7 +1538,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <div class="elementor-element elementor-widget elementor-widget-text-editor">
               <div class="elementor-widget-container">
-                <p>Somos Eduka. Todos los derechos reservados. Web diseñada por <a href="https://www.linkedin.com/in/samuelchavero" target="_blank">Samuel Chavero</a>.</p>
+                <p>Somos Eduka. Todos los derechos reservados. Web diseñada por <a href="https://www.instagram.com/samuchavero/" target="_blank">Samuel Chavero</a>.</p>
               </div>
             </div>
 
@@ -1446,12 +1580,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			</nav>
 			<div class="uicore-navigation-content">
                 <div class="uicore-menu-container uicore-nav"><ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 current_page_item menu-item-21"><a href="index.html" aria-current="page"><span class="ui-menu-item-wrapper">Inicio</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="index.html"><span class="ui-menu-item-wrapper">Nosotros</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="index.html"><span class="ui-menu-item-wrapper">Servicios</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="#nosotros"><span class="ui-menu-item-wrapper">Nosotros</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="#nservicios"><span class="ui-menu-item-wrapper">Servicios</span></a></li>
+
 
 </li>
 </ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">            <div class="uicore-cta-wrapper">
-				<a href="index.html"
+				<a href="#contacto"
 					target="_self"
 					class="uicore-btn ">
                     <span class="elementor-button-text">
@@ -1585,6 +1720,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
+<a href="https://wa.link/cmfh5b" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat en WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="WhatsApp" 
+       class="whatsapp-icon">
+</a>
 
 </body>
 </html>
