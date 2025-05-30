@@ -1,0 +1,1480 @@
+
+<!doctype html>
+<html lang="es-CL">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+<link rel="alternate" type="application/rss+xml" title="Taxmanager &raquo; Feed" href="https://www.taxmanager.cl/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Taxmanager &raquo; Feed de comentarios" href="https://www.taxmanager.cl/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.4.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-MMYG3V970S"  data-cfasync="false" data-wpfc-render="false" async></script>
+			<script data-cfasync="false" data-wpfc-render="false">
+				var mi_version = '9.4.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.taxmanager.cl\/","page_referrer":"https:\/\/www.taxmanager.cl\/about\/"};
+				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-MMYG3V970S',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-MMYG3V970S', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.taxmanager.cl\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\ud83d\udd25","\ud83d\udc26\u200b\ud83d\udd25")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<link rel='stylesheet' id='formidable-css' href='https://www.taxmanager.cl/wp-content/plugins/formidable/css/formidableforms.css?ver=423716' media='all' />
+<link rel='stylesheet' id='bdt-uikit-css' href='https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/css/bdt-uikit.css?ver=3.17.11' media='all' />
+<link rel='stylesheet' id='ep-helper-css' href='https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/css/ep-helper.css?ver=7.8.0' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+
+   
+
+   .uicore-svg-wrapper svg path {
+    stroke: #5B84A3 !important;
+    stroke-width: 50 !important; /* Más ancho para efecto pincel */
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    fill: none !important;
+    opacity: 0.8 !important;
+    filter: blur(0.3px);
+  }
+ 
+.ui-menu-item-wrapper {
+  color: #000000; /* color base, el que querés que tenga normalmente */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.menu-item > a:hover .ui-menu-item-wrapper {
+  color: #5B84A3;         /* color al pasar el cursor */
+  background-color: #ffffff; /* fondo al pasar el cursor */
+  cursor: pointer;
+}
+.uicore-btn {
+  background-color: #5B84A3 !important; /* naranja */
+  color: white !important;
+  border: 2px solid #ffffff !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.uicore-btn:hover {
+  background-color: white !important;
+  color: #252850 !important;
+  border-color: #ffffff !important;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='trp-language-switcher-style-css' href='https://www.taxmanager.cl/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=2.9.12' media='all' />
+<link rel='stylesheet' id='child-style-css' href='https://www.taxmanager.cl/wp-content/themes/vault-child/style.css?ver=6.8' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='elementor-post-20-css' href='https://www.taxmanager.cl/wp-content/uploads/elementor/css/post-20.css?ver=1745392569' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInDown-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='e-animation-rotateIn-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/lib/animations/styles/rotateIn.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='e-animation-zoomIn-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/lib/animations/styles/zoomIn.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='ep-advanced-icon-box-css' href='https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/css/ep-advanced-icon-box.css?ver=7.8.0' media='all' />
+<link rel='stylesheet' id='ep-advanced-counter-css' href='https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/css/ep-advanced-counter.css?ver=7.8.0' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.28.4' media='all' />
+<link rel='stylesheet' id='elementor-post-13-css' href='https://www.taxmanager.cl/wp-content/uploads/elementor/css/post-13.css?ver=1745392570' media='all' />
+<link rel='stylesheet' id='uicore_global-css' href='https://www.taxmanager.cl/wp-content/uploads/uicore-global.css?ver=1945' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-plusjakartasans-css' href='https://www.taxmanager.cl/wp-content/uploads/elementor/google-fonts/css/plusjakartasans.css?ver=1745392581' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://www.taxmanager.cl/wp-content/plugins/uicore-framework/assets/fonts/themify-icons.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='elementor-icons-uicore-icons-css' href='https://www.taxmanager.cl/wp-content/plugins/uicore-framework/assets/fonts/themify-icons.css?ver=1.0.0' media='all' />
+<script src="https://www.taxmanager.cl/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=9.4.1" id="monsterinsights-frontend-script-js" async data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" id='monsterinsights-frontend-script-js-extra'>var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.taxmanager.cl","hash_tracking":"false","v4_id":"G-MMYG3V970S"};</script>
+<script src="https://www.taxmanager.cl/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://www.taxmanager.cl/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://www.taxmanager.cl/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.taxmanager.cl/wp-json/wp/v2/pages/13" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.taxmanager.cl/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8" />
+<link rel='shortlink' href='https://www.taxmanager.cl/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.taxmanager.cl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.taxmanager.cl%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.taxmanager.cl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.taxmanager.cl%2F&#038;format=xml" />
+<link rel="alternate" hreflang="es-CL" href="https://www.taxmanager.cl/"/>
+<link rel="alternate" hreflang="en-US" href="https://www.taxmanager.cl/en/"/>
+<link rel="alternate" hreflang="es" href="https://www.taxmanager.cl/"/>
+<link rel="alternate" hreflang="en" href="https://www.taxmanager.cl/en/"/>
+<meta name="generator" content="Elementor 3.28.4; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<meta name="theme-color" content="#FFFFFF" />
+        <link rel="shortcut icon" href="img/favico.png" >
+		<link rel="icon" href="img/logo.png" >
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favico.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favico.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favico.png">
+        <link rel="apple-touch-icon" href="img/favico.png">
+        			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="img/logo.png" sizes="32x32" />
+<link rel="icon" href="img/logo.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="img/logo.png" />
+<meta name="msapplication-TileImage" content="img/logo.png" />
+
+</head>
+
+<body class="home wp-singular page-template-default page page-id-13 wp-embed-responsive wp-theme-vault wp-child-theme-vault-child eio-default translatepress-es_CL ui-a-dsmm-slide  elementor-default elementor-kit-8 elementor-page elementor-page-13">
+		<!-- Custom HTML - Page Options --><!-- 1.1 uicore_before_body_content -->	<div class="uicore-body-content">
+		<!-- 1.2 uicore_before_page_content -->		<div id="uicore-page">
+		
+        <div data-uils="header" data-uils-title="Header" id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite" class="uicore uicore-navbar elementor-section elementor-section-boxed uicore-h-classic uicore-sticky ui-smart-sticky uicore-transparent "><div class="uicore-header-wrapper">
+            <nav class="uicore elementor-container">
+            		 <div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
+                
+			<a href="index.html" rel="home">
+                <img class="uicore uicore-logo uicore-main" src="img/logo.png" alt="Taxmanager"/>
+				<img class="uicore uicore-logo uicore-second" src="img/logo.png" alt="Taxmanager" />
+				<img class="uicore uicore-logo uicore-mobile-main" src="img/logo.png" alt="Taxmanager" />
+				<img class="uicore uicore-logo uicore-mobile-second" src="img/logo.png" alt="Taxmanager" />
+			</a>
+
+		        </div>
+		        <div class='uicore-nav-menu'>
+            <div class="uicore-menu-container uicore-nav"><ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 current_page_item menu-item-21"><a href="index.html" aria-current="page"><span class="ui-menu-item-wrapper">Inicio</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="index.html"><span class="ui-menu-item-wrapper">Nosotros</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="index.html"><span class="ui-menu-item-wrapper">Servicios</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="index.html"><span class="ui-menu-item-wrapper">Porque elegirnos?</span></a></li>
+
+</li>
+</ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">            <div class="uicore-cta-wrapper">
+				<a href=""
+					target="_self"
+					class="uicore-btn ">
+                    <span class="elementor-button-text">
+						Contacto                    </span>
+				</a>
+            </div>
+        </div>        </div>
+		<div class="uicore-mobile-head-right">            <button type="button" class="uicore-toggle uicore-ham" aria-label="mobile-menu">
+                <span class="bars">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+        </div>            </nav>
+
+            </div>
+                    </div><!-- #wrapper-navbar end -->
+        <!-- 1.3 uicore_page -->			<div id="content" class="uicore-content">
+
+			<script id="uicore-page-transition">window.onload=window.onpageshow= function() {  }; </script><!-- 1.4 uicore_before_content --><div id="primary" class="content-area">
+
+	        <article id="post-13" class="post-13 page type-page status-publish hentry">
+            <main class="entry-content">
+                		<div data-elementor-type="wp-page" data-elementor-id="13" class="elementor elementor-13">
+						<div class="elementor-section elementor-top-section elementor-element elementor-element-1acd6ca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1acd6ca" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bf01834" data-id="bf01834" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4f99131 elementor-widget-tablet__width-initial ui-e-a-animate elementor-invisible elementor-widget elementor-widget-highlighted-text" data-id="4f99131" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="highlighted-text.default">
+				<div class="elementor-widget-container">
+							<h1 data-delay="900" class="ui-e--highlighted-text" >
+        <span class="ui-e-headline-text elementor-repeater-item-dc068de">Gestión escolar con</span><span class="ui-e-headline-text elementor-repeater-item-ade6a67 ui-e-headline-stroke1">
+									<span class="whitespace"></span>
+                                    <span>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">visión estrategica</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
+        				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-71e7c31" data-id="71e7c31" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-446278f elementor-widget-tablet__width-initial elementor-invisible elementor-widget elementor-widget-text-editor" data-id="446278f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Especialistas en servicios de outsourcing administrativo, cumplimiento normativo y asesoría tributaria en Chile.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-3a23aa4 elementor-invisible elementor-widget elementor-widget-button" data-id="3a23aa4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="/company/contact/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Contáctanos</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-f4f582e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="f4f582e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b1e5bbc" data-id="b1e5bbc" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-da4421a ep-parallax-effects-yes elementor-invisible elementor-widget elementor-widget-image" data-id="da4421a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400,&quot;ep_parallax_effects_show&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-120,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_y_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_hue_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_sepia_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_easing_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_target&quot;:&quot;self&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="2000" height="1119" src="https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago.jpg" class="attachment-full size-full wp-image-102" alt="Desarrolla tus negocios en Chile" srcset="https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago.jpg 2000w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-300x168.jpg 300w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-1024x573.jpg 1024w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-768x430.jpg 768w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-1536x859.jpg 1536w, https://www.taxmanager.cl/wp-content/uploads/2024/04/santiago-650x364.jpg 650w" sizes="(max-width: 2000px) 100vw, 2000px" />															</div>
+				</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-b43ead9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b43ead9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-469840c" data-id="469840c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ef391bf elementor-widget__width-auto animated-slow bdt-motion-effect-yes elementor-invisible elementor-widget elementor-widget-image" data-id="ef391bf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="#edge">
+							<img decoding="async" src="https://vault.uicore.co/company/wp-content/uploads/sites/15/2022/06/Company-Hero-Elipse.webp" title="" alt="" loading="lazy" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</div>
+					</div>
+		</div>
+					</div>
+		</div>
+		<div class="elementor-element elementor-element-1cfbab7 e-flex e-con-boxed e-con e-parent" data-id="1cfbab7" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ce0d21d ui-e-a-animate elementor-widget elementor-widget-highlighted-text" data-id="ce0d21d" data-element_type="widget" data-widget_type="highlighted-text.default">
+				<div class="elementor-widget-container">
+							<h2 class="ui-e--highlighted-text" >
+        <span class="ui-e-headline-text elementor-repeater-item-00e63df">Alcance global: Clientes de </span><span class="ui-e-headline-text elementor-repeater-item-e000065 ui-e-headline-stroke1">
+									<span class="whitespace"></span>
+                                    <span>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">más de 10 países</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span><span class="ui-e-headline-text elementor-repeater-item-22fda98">han escogido nuestros servicios</span>        </h2>
+        				</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-04ba18c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="04ba18c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f5fe10c" data-id="f5fe10c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-715ddf0 elementor-widget elementor-widget-text-editor" data-id="715ddf0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Nos especializamos en desarrollar soluciones que faciliten la apertura de filiales de empresas extranjeras en el país. <br /><span style="font-size: inherit; font-family: var( --e-global-typography-uicore_secondary-font-family ), Sans-serif; font-weight: var( --e-global-typography-uicore_secondary-font-weight ); background-color: rgba(255, 255, 255, 0); color: var(--uicore-typography--p-c,'#070707'); font-style: var(--uicore-typography--p-st,'normal'); letter-spacing: var(--uicore-typography--p-ls,'-0.027em'); text-transform: var(--uicore-typography--p-t,'none');">Ofrecemos asesoramiento para el establecimiento y  la ejecución de procesos administrativos durante el desarrollo de tu negocio. </span></p>								</div>
+				</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-a5e85a4 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a5e85a4" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-baf10a6" data-id="baf10a6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-31ebf64 elementor-invisible elementor-widget elementor-widget-image" data-id="31ebf64" data-element_type="widget" data-settings="{&quot;ep_floating_effects_show&quot;:&quot;yes&quot;,&quot;ep_floating_effects_translate_toggle&quot;:&quot;yes&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;ep_floating_effects_translate_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:0}},&quot;ep_floating_effects_translate_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:30}},&quot;ep_floating_effects_translate_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ep_floating_effects_translate_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_floating_effects_easing&quot;:&quot;easeInOutQuad&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="730" height="400" src="https://www.taxmanager.cl/wp-content/uploads/2024/04/iStock-1727335145-Convertido-5.png" class="attachment-large size-large wp-image-147" alt="Mapa de nuestros clientes en el mundo" srcset="https://www.taxmanager.cl/wp-content/uploads/2024/04/iStock-1727335145-Convertido-5.png 730w, https://www.taxmanager.cl/wp-content/uploads/2024/04/iStock-1727335145-Convertido-5-300x164.png 300w, https://www.taxmanager.cl/wp-content/uploads/2024/04/iStock-1727335145-Convertido-5-650x356.png 650w" sizes="(max-width: 730px) 100vw, 730px" />															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</div>
+					</div>
+		</div>
+					</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-f9dd146 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f9dd146" data-element_type="section" id="edge" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b3f858a" data-id="b3f858a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f0c6690 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="f0c6690" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Asesoramiento integral adaptado a sus necesidades</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-93c177d elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="93c177d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p></p>
+<p>Nuestros profesionales se encargan de gestionar de manera integral todos tus procesos administrativos y de cumplimiento, permitiéndote enfocarte en la operación y crecimiento de tu negocio.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-584e1e7 elementor-view-default elementor-widget elementor-widget-icon" data-id="584e1e7" data-element_type="widget" data-settings="{&quot;ep_floating_effects_show&quot;:&quot;yes&quot;,&quot;ep_floating_effects_translate_toggle&quot;:&quot;yes&quot;,&quot;ep_floating_effects_translate_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:30}},&quot;ep_floating_effects_translate_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:0,&quot;to&quot;:0}},&quot;ep_floating_effects_translate_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ep_floating_effects_translate_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_floating_effects_easing&quot;:&quot;easeInOutQuad&quot;}" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="ti ti-arrow-right"></i>			</div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5690208 elementor-invisible" data-id="5690208" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:100}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-819236c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="819236c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:500}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ab16405" data-id="ab16405" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0d0aaa8 elementor-widget elementor-widget-heading" data-id="0d0aaa8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Conversemos</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-52c33b4 elementor-widget elementor-widget-text-editor" data-id="52c33b4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Consulte por nuestros servicios o soluciones personalizadas para su proyecto.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-7ff6a91 elementor-widget elementor-widget-formidable" data-id="7ff6a91" data-element_type="widget" data-widget_type="formidable.default">
+				<div class="elementor-widget-container">
+					<div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_2_container" data-token="488a00bf903a2b70e4e28e9a9961a7ab">
+<form enctype="multipart/form-data" method="post" class="frm-show-form " id="form_contacto" data-token="488a00bf903a2b70e4e28e9a9961a7ab">
+<div class="frm_form_fields ">
+<fieldset>
+<legend class="frm_screen_reader">Contacto</legend>
+
+<div class="frm_fields_container">
+<input type="hidden" name="frm_action" value="create" />
+<input type="hidden" name="form_id" value="2" />
+<input type="hidden" name="frm_hide_fields_2" id="frm_hide_fields_2" value="" />
+<input type="hidden" name="form_key" value="contacto" />
+<input type="hidden" name="item_meta[0]" value="" />
+<input type="hidden" id="frm_submit_entry_2" name="frm_submit_entry_2" value="5b525bcbd0" /><input type="hidden" name="_wp_http_referer" value="/" /><div id="frm_field_6_container" class="frm_form_field form-field  frm_required_field frm_top_container frm12 frm_first">
+	<label for="field_qh4icy2" id="field_qh4icy2_label" class="frm_primary_label">Nombre
+		<span class="frm_required" aria-hidden="true">*</span>
+	</label>
+	<input type="text" id="field_qh4icy2" name="item_meta[6]" value=""  data-reqmsg="Nombre cannot be blank." aria-required="true" data-invmsg="Nombre is invalid" aria-invalid="false"  />
+	
+	
+</div>
+<div id="frm_field_8_container" class="frm_form_field form-field  frm_required_field frm_top_container frm_full">
+	<label for="field_29yf4d2" id="field_29yf4d2_label" class="frm_primary_label">E-mail
+		<span class="frm_required" aria-hidden="true">*</span>
+	</label>
+	<input type="email" id="field_29yf4d2" name="item_meta[8]" value=""  data-reqmsg="E-mail cannot be blank." aria-required="true" data-invmsg="Please enter a valid email address" aria-invalid="false"  />
+	
+	
+</div>
+<div id="frm_field_10_container" class="frm_form_field form-field  frm_required_field frm_top_container frm_full">
+	<label for="field_9jv0r12" id="field_9jv0r12_label" class="frm_primary_label">Mensaje
+		<span class="frm_required" aria-hidden="true">*</span>
+	</label>
+	<textarea name="item_meta[10]" id="field_9jv0r12" rows="5"  data-reqmsg="Mensaje cannot be blank." aria-required="true" data-invmsg="Mensaje is invalid" aria-invalid="false"  ></textarea>
+	
+	
+</div>
+<div id="frm_field_11_container" class="frm_form_field form-field ">
+	<div class="frm_submit">
+
+<button class="frm_button_submit" type="submit"  >Enviar</button>
+
+</div>
+</div>
+	<input type="hidden" name="item_key" value="" />
+				<div class="frm__6633c6061db62">
+				<label for="frm_email_2" >
+					If you are human, leave this field blank.				</label>
+				<input  id="frm_email_2" type="text" class="frm_verify" name="frm__6633c6061db62" value="" autocomplete="off"  />
+			</div>
+		</div>
+</fieldset>
+</div>
+
+</form>
+</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-22c429c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="22c429c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f06308f" data-id="f06308f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9cf3d50  ui-split-animate ui-splitby-chars elementor-widget elementor-widget-heading" data-id="9cf3d50" data-element_type="widget" data-settings="{&quot;ui_animate_split&quot;:&quot;ui-split-animate&quot;,&quot;ui_animate_split_style&quot;:&quot;fadeIn&quot;,&quot;ui_animate_split_by&quot;:&quot;chars&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Nuestros Servicios</h2>				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-0add254 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0add254" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4df56c7" data-id="4df56c7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b8a581f elementor-widget elementor-widget-spacer" data-id="b8a581f" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8a63779 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8a63779" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-db825a0" data-id="db825a0" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-482463e animated-slow bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="482463e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="bdt-advanced-icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-icon-box">
+
+							
+					<div class="bdt-ep-advanced-icon-box-icon">
+				<span class="bdt-ep-advanced-icon-box-icon-wrap">
+
+
+					
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-briefcase" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg>
+
+									</span>
+			</div>
+		
+				
+			<div class="bdt-ep-advanced-icon-box-content">
+
+									
+					<h3 class="bdt-ep-advanced-icon-box-title">
+				<span >
+					Consultoría de negocios				</span>
+			</h3>
+		
+
+		
+					
+				
+									<div class="bdt-ep-advanced-icon-box-description">
+						<p>Asistencia para establecer tu empresa y cumplir con regulaciones. Soluciones&nbsp; estratégicas y operativas para impulsar tu negocio.</p>					</div>
+				
+									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
+						
+											</a>
+							</div>
+		</div>
+
+		
+		
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-f0790f1" data-id="f0790f1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-436c82a animated-slow bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="436c82a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="bdt-advanced-icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-icon-box">
+
+							
+					<div class="bdt-ep-advanced-icon-box-icon">
+				<span class="bdt-ep-advanced-icon-box-icon-wrap">
+
+
+					
+						<i aria-hidden="true" class="ti ti-arrow-circle-up"></i>
+
+									</span>
+			</div>
+		
+				
+			<div class="bdt-ep-advanced-icon-box-content">
+
+									
+					<h3 class="bdt-ep-advanced-icon-box-title">
+				<span >
+					Asesoría tributaria				</span>
+			</h3>
+		
+
+		
+					
+				
+									<div class="bdt-ep-advanced-icon-box-description">
+						<p>Nuestros especialistas tributarios brindan asesoramiento experto para optimizar tu carga fiscal y cumplir con las obligaciones tributarias.</p>					</div>
+				
+									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
+						
+											</a>
+							</div>
+		</div>
+
+		
+		
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-96e5ab5" data-id="96e5ab5" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e6f1433 animated-slow bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="e6f1433" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="bdt-advanced-icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-icon-box">
+
+							
+					<div class="bdt-ep-advanced-icon-box-icon">
+				<span class="bdt-ep-advanced-icon-box-icon-wrap">
+
+
+					
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-project-diagram" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z"></path></svg>
+
+									</span>
+			</div>
+		
+				
+			<div class="bdt-ep-advanced-icon-box-content">
+
+									
+					<h3 class="bdt-ep-advanced-icon-box-title">
+				<span >
+					Backoffice y Tesorería				</span>
+			</h3>
+		
+
+		
+					
+				
+									<div class="bdt-ep-advanced-icon-box-description">
+						<p>Nos encargamos de tus procesos administrativos y financieros, como facturación, pagos, cobros, conciliaciones y otros.</p>					</div>
+				
+									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
+						
+											</a>
+							</div>
+		</div>
+
+		
+		
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-03c3b94" data-id="03c3b94" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7a86011 animated-slow bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="7a86011" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="bdt-advanced-icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-icon-box">
+
+							
+					<div class="bdt-ep-advanced-icon-box-icon">
+				<span class="bdt-ep-advanced-icon-box-icon-wrap">
+
+
+					
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-calculator" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 0H48C22.4 0 0 22.4 0 48v416c0 25.6 22.4 48 48 48h352c25.6 0 48-22.4 48-48V48c0-25.6-22.4-48-48-48zM128 435.2c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-128c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm128 128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm128 128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8V268.8c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v166.4zm0-256c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8V76.8C64 70.4 70.4 64 76.8 64h294.4c6.4 0 12.8 6.4 12.8 12.8v102.4z"></path></svg>
+
+									</span>
+			</div>
+		
+				
+			<div class="bdt-ep-advanced-icon-box-content">
+
+									
+					<h3 class="bdt-ep-advanced-icon-box-title">
+				<span >
+					Contabilidad				</span>
+			</h3>
+		
+
+		
+					
+				
+									<div class="bdt-ep-advanced-icon-box-description">
+						<p>Adaptada a la normativa chilena y otros estándares requeridos. Reportes financieros personalizados según las necesidades de tu empresa.</p>					</div>
+				
+									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
+						
+											</a>
+							</div>
+		</div>
+
+		
+		
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-5aa520e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5aa520e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-52458b7" data-id="52458b7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d0cd1b9 elementor-widget elementor-widget-spacer" data-id="d0cd1b9" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-0e0265d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0e0265d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-6ac81d4" data-id="6ac81d4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1b5452f animated-slow bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="1b5452f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="bdt-advanced-icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-icon-box">
+
+							
+					<div class="bdt-ep-advanced-icon-box-icon">
+				<span class="bdt-ep-advanced-icon-box-icon-wrap">
+
+
+					
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-users" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path></svg>
+
+									</span>
+			</div>
+		
+				
+			<div class="bdt-ep-advanced-icon-box-content">
+
+									
+					<h3 class="bdt-ep-advanced-icon-box-title">
+				<span >
+					Remuneraciones				</span>
+			</h3>
+		
+
+		
+					
+				
+									<div class="bdt-ep-advanced-icon-box-description">
+						<p>Optimiza el proceso de remuneraciones con nosotros. Nos encargamos del cálculo de nómina, imposiciones, impuestos y cumplimiento en la DT.</p>					</div>
+				
+									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
+						
+											</a>
+							</div>
+		</div>
+
+		
+		
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-debc175" data-id="debc175" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-47bf050 animated-slow bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="47bf050" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="bdt-advanced-icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-icon-box">
+
+							
+					<div class="bdt-ep-advanced-icon-box-icon">
+				<span class="bdt-ep-advanced-icon-box-icon-wrap">
+
+
+					
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-users-cog" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M610.5 341.3c2.6-14.1 2.6-28.5 0-42.6l25.8-14.9c3-1.7 4.3-5.2 3.3-8.5-6.7-21.6-18.2-41.2-33.2-57.4-2.3-2.5-6-3.1-9-1.4l-25.8 14.9c-10.9-9.3-23.4-16.5-36.9-21.3v-29.8c0-3.4-2.4-6.4-5.7-7.1-22.3-5-45-4.8-66.2 0-3.3.7-5.7 3.7-5.7 7.1v29.8c-13.5 4.8-26 12-36.9 21.3l-25.8-14.9c-2.9-1.7-6.7-1.1-9 1.4-15 16.2-26.5 35.8-33.2 57.4-1 3.3.4 6.8 3.3 8.5l25.8 14.9c-2.6 14.1-2.6 28.5 0 42.6l-25.8 14.9c-3 1.7-4.3 5.2-3.3 8.5 6.7 21.6 18.2 41.1 33.2 57.4 2.3 2.5 6 3.1 9 1.4l25.8-14.9c10.9 9.3 23.4 16.5 36.9 21.3v29.8c0 3.4 2.4 6.4 5.7 7.1 22.3 5 45 4.8 66.2 0 3.3-.7 5.7-3.7 5.7-7.1v-29.8c13.5-4.8 26-12 36.9-21.3l25.8 14.9c2.9 1.7 6.7 1.1 9-1.4 15-16.2 26.5-35.8 33.2-57.4 1-3.3-.4-6.8-3.3-8.5l-25.8-14.9zM496 368.5c-26.8 0-48.5-21.8-48.5-48.5s21.8-48.5 48.5-48.5 48.5 21.8 48.5 48.5-21.7 48.5-48.5 48.5zM96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm224 32c1.9 0 3.7-.5 5.6-.6 8.3-21.7 20.5-42.1 36.3-59.2 7.4-8 17.9-12.6 28.9-12.6 6.9 0 13.7 1.8 19.6 5.3l7.9 4.6c.8-.5 1.6-.9 2.4-1.4 7-14.6 11.2-30.8 11.2-48 0-61.9-50.1-112-112-112S208 82.1 208 144c0 61.9 50.1 112 112 112zm105.2 194.5c-2.3-1.2-4.6-2.6-6.8-3.9-8.2 4.8-15.3 9.8-27.5 9.8-10.9 0-21.4-4.6-28.9-12.6-18.3-19.8-32.3-43.9-40.2-69.6-10.7-34.5 24.9-49.7 25.8-50.3-.1-2.6-.1-5.2 0-7.8l-7.9-4.6c-3.8-2.2-7-5-9.8-8.1-3.3.2-6.5.6-9.8.6-24.6 0-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h255.4c-3.7-6-6.2-12.8-6.2-20.3v-9.2zM173.1 274.6C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path></svg>
+
+									</span>
+			</div>
+		
+				
+			<div class="bdt-ep-advanced-icon-box-content">
+
+									
+					<h3 class="bdt-ep-advanced-icon-box-title">
+				<span >
+					Recursos Humanos				</span>
+			</h3>
+		
+
+		
+					
+				
+									<div class="bdt-ep-advanced-icon-box-description">
+						<p>Fortalece el contacto con tu equipo, potencia el desarrollo organizacional y ahorra recursos delegando tareas laborales administrativas.&nbsp;</p>					</div>
+				
+									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
+						
+											</a>
+							</div>
+		</div>
+
+		
+		
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d95d0e8" data-id="d95d0e8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6d9ce7e animated-slow bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="6d9ce7e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="bdt-advanced-icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-icon-box">
+
+							
+					<div class="bdt-ep-advanced-icon-box-icon">
+				<span class="bdt-ep-advanced-icon-box-icon-wrap">
+
+
+					
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+
+									</span>
+			</div>
+		
+				
+			<div class="bdt-ep-advanced-icon-box-content">
+
+									
+					<h3 class="bdt-ep-advanced-icon-box-title">
+				<span >
+					Cumplimiento tributario				</span>
+			</h3>
+		
+
+		
+					
+				
+									<div class="bdt-ep-advanced-icon-box-description">
+						<p>Gestionamos tus impuestos mensuales (IVA, Retenciones y otros) y anuales (declaración renta y DDJJ).</p>					</div>
+				
+									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
+						
+											</a>
+							</div>
+		</div>
+
+		
+		
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4c7fdbf" data-id="4c7fdbf" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a1ff210 animated-slow bdt-icon-type-icon elementor-position-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box" data-id="a1ff210" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="bdt-advanced-icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-icon-box">
+
+							
+					<div class="bdt-ep-advanced-icon-box-icon">
+				<span class="bdt-ep-advanced-icon-box-icon-wrap">
+
+
+					
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-signature" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M623.2 192c-51.8 3.5-125.7 54.7-163.1 71.5-29.1 13.1-54.2 24.4-76.1 24.4-22.6 0-26-16.2-21.3-51.9 1.1-8 11.7-79.2-42.7-76.1-25.1 1.5-64.3 24.8-169.5 126L192 182.2c30.4-75.9-53.2-151.5-129.7-102.8L7.4 116.3C0 121-2.2 130.9 2.5 138.4l17.2 27c4.7 7.5 14.6 9.7 22.1 4.9l58-38.9c18.4-11.7 40.7 7.2 32.7 27.1L34.3 404.1C27.5 421 37 448 64 448c8.3 0 16.5-3.2 22.6-9.4 42.2-42.2 154.7-150.7 211.2-195.8-2.2 28.5-2.1 58.9 20.6 83.8 15.3 16.8 37.3 25.3 65.5 25.3 35.6 0 68-14.6 102.3-30 33-14.8 99-62.6 138.4-65.8 8.5-.7 15.2-7.3 15.2-15.8v-32.1c.2-9.1-7.5-16.8-16.6-16.2z"></path></svg>
+
+									</span>
+			</div>
+		
+				
+			<div class="bdt-ep-advanced-icon-box-content">
+
+									
+					<h3 class="bdt-ep-advanced-icon-box-title">
+				<span >
+					Representación Legal				</span>
+			</h3>
+		
+
+		
+					
+				
+									<div class="bdt-ep-advanced-icon-box-description">
+						<p>Designamos un representante para todas tus gestiones ante entidades públicas y privadas, como impuestos, aduanas, y trámites financieros.</p>					</div>
+				
+									<a class="bdt-ep-advanced-icon-box-readmore bdt-display-inline-block">
+						
+											</a>
+							</div>
+		</div>
+
+		
+		
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8827074 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8827074" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a19aebd" data-id="a19aebd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cd447b7  ui-split-animate ui-e-a-animate ui-splitby-chars elementor-widget elementor-widget-highlighted-text" data-id="cd447b7" data-element_type="widget" data-settings="{&quot;ui_animate_split&quot;:&quot;ui-split-animate&quot;,&quot;ui_animate_split_style&quot;:&quot;fadeIn&quot;,&quot;ui_animate_split_by&quot;:&quot;chars&quot;}" data-widget_type="highlighted-text.default">
+				<div class="elementor-widget-container">
+							<h1 data-delay="1200" class="ui-e--highlighted-text" >
+        <span class="ui-e-headline-text elementor-repeater-item-9d4da75 ui-e-headline-stroke1">
+									<span class="whitespace"></span>
+                                    <span>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">Simplifiquemos </span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span><span class="ui-e-headline-text elementor-repeater-item-9a25cf9">la gestión </span><span class="ui-e-headline-text elementor-repeater-item-dba157b">y el</span><span class="ui-e-headline-text elementor-repeater-item-2bdfaa6 ui-e-headline-stroke1">
+									<span class="whitespace"></span>
+                                    <span>
+                                        <span class="ui-e-headline-text ui-e-headline-highlighted">cumplimiento</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
+        				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-78530d1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="78530d1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ae016e9" data-id="ae016e9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3abc618 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="3abc618" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Nuestra propuesta de trabajo se basa en brindar un <strong>servicio integral</strong> y asesoramiento <strong>personalizado</strong>.</p>
+<p>Promovemos el establecimiento de <strong>relaciones colaborativas y de confianza</strong> con nuestros clientes a través de una asistencia continua.</p>								</div>
+				</div>
+				<div class="elementor-section elementor-inner-section elementor-element elementor-element-9ca24a6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9ca24a6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-cb27945" data-id="cb27945" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4966bb2 elementor-widget elementor-widget-bdt-advanced-counter" data-id="4966bb2" data-element_type="widget" data-widget_type="bdt-advanced-counter.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-counter" data-settings="{&quot;id&quot;:&quot;bdt-ep-advanced-counter-data-4966bb2&quot;,&quot;countStart&quot;:1,&quot;countNumber&quot;:50,&quot;language&quot;:[&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;],&quot;duration&quot;:&quot;2&quot;,&quot;useEasing&quot;:&quot;yes&quot;,&quot;useGrouping&quot;:&quot;no&quot;,&quot;decimalSymbol&quot;:&quot;.&quot;,&quot;counterSuffix&quot;:&quot;+&quot;}">
+									
+							<div class="bdt-ep-advanced-counter-content">
+									
+					<div class="bdt-ep-advanced-counter-number">
+				<span class="bdt-count-this" id="bdt-ep-advanced-counter-data-4966bb2" >
+					50				</span>
+			</div>
+																				<p class="bdt-ep-advanced-counter-text">
+						Proyectos realizados					</p>
+							</div>
+		</div>
+
+		
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4b6b15f" data-id="4b6b15f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f7d1829 elementor-widget__width-initial elementor-widget elementor-widget-bdt-advanced-counter" data-id="f7d1829" data-element_type="widget" data-widget_type="bdt-advanced-counter.default">
+				<div class="elementor-widget-container">
+							<div class="bdt-ep-advanced-counter" data-settings="{&quot;id&quot;:&quot;bdt-ep-advanced-counter-data-f7d1829&quot;,&quot;countStart&quot;:1,&quot;countNumber&quot;:10,&quot;language&quot;:[&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;],&quot;duration&quot;:&quot;2&quot;,&quot;useEasing&quot;:&quot;yes&quot;,&quot;useGrouping&quot;:&quot;no&quot;,&quot;decimalSymbol&quot;:&quot;.&quot;,&quot;counterSuffix&quot;:&quot;+&quot;}">
+									
+							<div class="bdt-ep-advanced-counter-content">
+									
+					<div class="bdt-ep-advanced-counter-number">
+				<span class="bdt-count-this" id="bdt-ep-advanced-counter-data-f7d1829" >
+					10				</span>
+			</div>
+																				<p class="bdt-ep-advanced-counter-text">
+						Países, alcance global					</p>
+							</div>
+		</div>
+
+		
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-54318e8" data-id="54318e8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-98d2144 animated-slow elementor-widget-divider--view-line elementor-invisible elementor-widget elementor-widget-divider" data-id="98d2144" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-0e81f10" data-id="0e81f10" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-201ef93 ep-parallax-effects-yes elementor-invisible elementor-widget elementor-widget-image" data-id="201ef93" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;rotateIn&quot;,&quot;ep_parallax_effects_show&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_rotate_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-180,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:235,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:5.6,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_hue_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_easing&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_easing_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.5,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_sepia_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_target&quot;:&quot;self&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="#">
+							<img loading="lazy" decoding="async" width="196" height="196" src="https://www.taxmanager.cl/wp-content/uploads/2024/04/fav_icon2.png" class="attachment-full size-full wp-image-95" alt="Logotipo Taxmanager" srcset="https://www.taxmanager.cl/wp-content/uploads/2024/04/fav_icon2.png 196w, https://www.taxmanager.cl/wp-content/uploads/2024/04/fav_icon2-150x150.png 150w" sizes="(max-width: 196px) 100vw, 196px" />								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</div>
+					</div>
+		</div>
+					</div>
+		</div>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-e79b2a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e79b2a2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5858c7e" data-id="5858c7e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b0e4421 elementor-widget elementor-widget-heading" data-id="b0e4421" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Blog</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e178d7e elementor-widget elementor-widget-uicore-post-grid" data-id="e178d7e" data-element_type="widget" data-widget_type="uicore-post-grid.default">
+				<div class="elementor-widget-container">
+					<div class="uicore-grid-container uicore-blog-grid uicore-grid-row uicore-horizontal uicore-landscape-ratio uicore-medium-space animate-2 ui-st-simple uicore-blog-widget">
+            <div class="uicore-grid-item uicore-col-md-6 uicore-col-lg-6  uicore-zoom uicore-animate post-855 post type-post status-publish format-standard has-post-thumbnail hentry category-tributario tag-declaracion-renta tag-declaracion-renta-2025 tag-declaraciones-juradas tag-operacion-renta tag-renta tag-renta-2025 tag-taxmanager tag-taxmanager-renta" >
+                <article class="uicore-post">
+                    <div class="uicore-post-wrapper">
+
+                        <a href="https://www.taxmanager.cl/2025/03/21/declaracion-renta-2025-en-chile/" title=" View Post: Declaración Renta 2025 en Chile: ¿Quienes deben declarar?" >  <div class="uicore-blog-img-container uicore-zoom-wrapper">
+                                            <div class="uicore-cover-img" style="background-image: url(https://www.taxmanager.cl/wp-content/uploads/2025/03/Logotipo_Servicio_de_Impuestos_Internos.svg.png)"></div>
+                                        </div></a>
+                        <div class="uicore-post-info">
+                            <div class="uicore-post-info-wrapper">
+                                <a href="https://www.taxmanager.cl/2025/03/21/declaracion-renta-2025-en-chile/" title="View Post: Declaración Renta 2025 en Chile: ¿Quienes deben declarar? ">                              <h4 class="uicore-post-title"><span>Declaración Renta 2025 en Chile: ¿Quienes deben declarar?</span></h4>
+                              </a><div class="uicore-post-footer uicore-body"><span>1 min read</span></div>                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        
+            <div class="uicore-grid-item uicore-col-md-6 uicore-col-lg-6  uicore-zoom uicore-animate post-695 post type-post status-publish format-standard has-post-thumbnail hentry category-gestion-de-negocios tag-international-desk tag-international-desk-empresa-chilena tag-international-desk-en-chile tag-servicios-international-desk" >
+                <article class="uicore-post">
+                    <div class="uicore-post-wrapper">
+
+                        <a href="https://www.taxmanager.cl/2025/03/06/international-desk-para-tu-empresa-en-chile/" title=" View Post: International Desk para tu empresa en Chile" >  <div class="uicore-blog-img-container uicore-zoom-wrapper">
+                                            <div class="uicore-cover-img" style="background-image: url(https://www.taxmanager.cl/wp-content/uploads/2025/02/cristian-castillo-BTPsf2WnWRs-unsplash-433x650.jpg)"></div>
+                                        </div></a>
+                        <div class="uicore-post-info">
+                            <div class="uicore-post-info-wrapper">
+                                <a href="https://www.taxmanager.cl/2025/03/06/international-desk-para-tu-empresa-en-chile/" title="View Post: International Desk para tu empresa en Chile ">                              <h4 class="uicore-post-title"><span>International Desk para tu empresa en Chile</span></h4>
+                              </a><div class="uicore-post-footer uicore-body"><span>1 min read</span></div>                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        
+            <div class="uicore-grid-item uicore-col-md-6 uicore-col-lg-6  uicore-zoom uicore-animate post-691 post type-post status-publish format-standard has-post-thumbnail hentry category-tributario tag-at-2025 tag-calendario-declaraciones-juradas tag-operacion-renta tag-operacion-renta-at-2025 tag-operacion-renta-taxmanager tag-taxmanager" >
+                <article class="uicore-post">
+                    <div class="uicore-post-wrapper">
+
+                        <a href="https://www.taxmanager.cl/2025/03/03/operacion-renta-at-2025-tips-declaraciones-juradas-marzo/" title=" View Post: Operación Renta AT 2025: Tips para las Declaraciones Juradas de marzo" >  <div class="uicore-blog-img-container uicore-zoom-wrapper">
+                                            <div class="uicore-cover-img" style="background-image: url(https://www.taxmanager.cl/wp-content/uploads/2025/02/towfiqu-barbhuiya-bwOAixLG0uc-unsplash-650x434.jpg)"></div>
+                                        </div></a>
+                        <div class="uicore-post-info">
+                            <div class="uicore-post-info-wrapper">
+                                <a href="https://www.taxmanager.cl/2025/03/03/operacion-renta-at-2025-tips-declaraciones-juradas-marzo/" title="View Post: Operación Renta AT 2025: Tips para las Declaraciones Juradas de marzo ">                              <h4 class="uicore-post-title"><span>Operación Renta AT 2025: Tips para las Declaraciones Juradas de marzo</span></h4>
+                              </a><div class="uicore-post-footer uicore-body"><span>2 min read</span></div>                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</div>
+				</div>
+		            </main>
+        </article>
+        
+</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	            <footer id="uicore-tb-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+			    		<div data-elementor-type="uicore-tb" data-elementor-id="20" class="elementor elementor-20">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-bb7bf1d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bb7bf1d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-01ad683" data-id="01ad683" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c28a70f elementor-widget elementor-widget-image" data-id="c28a70f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="800" height="150" src="https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco.png" class="attachment-full size-full wp-image-172" alt="" srcset="https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco.png 800w, https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco-300x56.png 300w, https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco-768x144.png 768w, https://www.taxmanager.cl/wp-content/uploads/2022/06/header2-blanco-650x122.png 650w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-5f30ab3 elementor-widget elementor-widget-text-editor" data-id="5f30ab3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Apoyando el desarrollo de tu negocio en Chile</p>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ff9466c" data-id="ff9466c" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f3d4d4a elementor-widget elementor-widget-heading" data-id="f3d4d4a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Empresa</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c3d20b9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c3d20b9" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.taxmanager.cl/site/about/">
+
+											<span class="elementor-icon-list-text">Acerca de Nosotros</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.taxmanager.cl/site/contact/">
+
+											<span class="elementor-icon-list-text">Contacto</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-2d87b23" data-id="2d87b23" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5321937 elementor-widget elementor-widget-heading" data-id="5321937" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Servicios</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e8b4052 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e8b4052" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.taxmanager.cl/site/outsourcing/">
+
+											<span class="elementor-icon-list-text">Outsourcing</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.taxmanager.cl/site/cumplimiento-normativo/">
+
+											<span class="elementor-icon-list-text">Cumplimiento normativo</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.taxmanager.cl/site/asesoria-tributaria/">
+
+											<span class="elementor-icon-list-text">Asesoría Tributaria</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.taxmanager.cl/site/gestion-negocios/">
+
+											<span class="elementor-icon-list-text">Gestión de Negocios</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-929cc92" data-id="929cc92" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-602f2cc elementor-widget elementor-widget-heading" data-id="602f2cc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Síguenos</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-70085f0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="70085f0" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://www.linkedin.com/company/taxmanager-cl/">
+
+											<span class="elementor-icon-list-text">LinkedIn</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.instagram.com/taxmanagercl/">
+
+											<span class="elementor-icon-list-text">Instagram</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-section elementor-top-section elementor-element elementor-element-f1d658e elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f1d658e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ce6cf99" data-id="ce6cf99" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9034635 elementor-widget elementor-widget-text-editor" data-id="9034635" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									&copy; 2025 · UiCore · <a href="https://www.uicore.co/ " target="_blank" title="UiCore">Premium WordPress Themes</a>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</div>
+				</div>
+				    </footer>
+            <!-- 1.5 uicore_content_end -->
+</div><!-- #page -->
+
+<div id="uicore-back-to-top" class="uicore-back-to-top uicore-i-arrow uicore_hide_mobile "></div>        <div class="uicore-navigation-wrapper uicore-navbar elementor-section elementor-section-boxed uicore-mobile-menu-wrapper
+                ">
+			<nav class="uicore elementor-container">
+				<div class="uicore-branding uicore-mobile">
+                                            <a href="https://www.taxmanager.cl/" rel="home">
+                            <img class="uicore uicore-logo"  src="https://www.taxmanager.cl/wp-content/uploads/2024/04/header2.png" alt="Taxmanager"/>
+                        </a>
+                    				</div>
+
+
+                <div class="uicore-branding uicore-desktop">
+                    				</div>
+
+
+
+                <div class="uicore-mobile-head-right">
+                    
+
+                    <button type="button" class="uicore-toggle uicore-ham" aria-label="mobile-menu">
+                        <span class="bars">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </span>
+                    </button>
+                </div>
+			</nav>
+			<div class="uicore-navigation-content">
+                <div class="uicore-menu-container uicore-nav"><ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-13 current_page_item menu-item-21"><a href="https://www.taxmanager.cl/" aria-current="page"><span class="ui-menu-item-wrapper">Home</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://www.taxmanager.cl/about/"><span class="ui-menu-item-wrapper">Sobre Nosotros</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="https://www.taxmanager.cl/servicios/"><span class="ui-menu-item-wrapper">Servicios</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://www.taxmanager.cl/blog/"><span class="ui-menu-item-wrapper">Blog</span></a></li>
+<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-has-children current-language-menu-item menu-item-576"><a href="https://www.taxmanager.cl/"><span class="ui-menu-item-wrapper"><span data-no-translation><img class="trp-flag-image" src="https://www.taxmanager.cl/wp-content/plugins/translatepress-multilingual/assets/images/flags/es_CL.png" width="18" height="12" alt="es_CL" title="Spanish"><span class="trp-ls-language-name">Spanish</span></span></span></a>
+<ul class="sub-menu">
+	<li class="trp-language-switcher-container menu-item menu-item-type-post_type menu-item-object-language_switcher menu-item-575"><a href="https://www.taxmanager.cl/en/"><span class="ui-menu-item-wrapper"><span data-no-translation><img class="trp-flag-image" src="https://www.taxmanager.cl/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" width="18" height="12" alt="en_US" title="English"><span class="trp-ls-language-name">English</span></span></span></a></li>
+</ul>
+</li>
+</ul></div><div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">            <div class="uicore-cta-wrapper">
+				<a href="/site/contact"
+					target="_self"
+					class="uicore-btn ">
+                    <span class="elementor-button-text">
+						Contacto                    </span>
+				</a>
+            </div>
+        </div>            </div>
+		</div>
+		<!-- 1.6 uicore_body_end --></div>
+<!-- 1.7 uicore_after_body_content --><template id="tp-language" data-tp-language="es_CL"></template><script> 
+var uicore_frontend = {'back':'Back', 'rtl' : '','mobile_br' : '1025'};
+ console.log( 'Using Vault v.2.0.9');
+ console.log( 'Powered By UiCore Framework v.5.0.9');
+ </script> <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/vault-child\/*","\/wp-content\/themes\/vault\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/app/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:'4765f073d24d29ee532fe04ebcfc02ac'})})</script><div class="ui-cursor ui-cursor-main"></div>			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='ui-e-highlighted-text-css' href='https://www.taxmanager.cl/wp-content/plugins/uicore-elements/assets/css/elements/highlighted-text.css?ver=1.2.3' media='all' />
+<link rel='stylesheet' id='ui-e-split-css' href='https://www.taxmanager.cl/wp-content/plugins/uicore-animate/assets/css/split.css?ver=2.1.5' media='all' />
+<link rel='stylesheet' id='uicore-blog-st-css' href='https://www.taxmanager.cl/wp-content/uploads/uicore-blog.css?ver=1945' media='all' />
+<link rel='stylesheet' id='ui-e-post-grid-css' href='https://www.taxmanager.cl/wp-content/plugins/uicore-elements/assets/css/elements/post-grid.css?ver=1.2.3' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://www.taxmanager.cl/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.28.4' media='all' />
+<script src="https://www.taxmanager.cl/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script id="starter-templates-zip-preview-js-extra">
+var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-","AstEleColorPaletteVarPrefix":"--ast-global-"};
+</script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea" id="starter-templates-zip-preview-js"></script>
+<script id="bdt-uikit-js-extra">
+var element_pack_ajax_login_config = {"ajaxurl":"https:\/\/www.taxmanager.cl\/wp-admin\/admin-ajax.php","language":"es","loadingmessage":"Sending user info, please wait...","unknownerror":"Unknown error, make sure access is correct!"};
+var ElementPackConfig = {"ajaxurl":"https:\/\/www.taxmanager.cl\/wp-admin\/admin-ajax.php","nonce":"659f76523a","data_table":{"language":{"sLengthMenu":"Show _MENU_ Entries","sInfo":"Showing _START_ to _END_ of _TOTAL_ entries","sSearch":"Search :","sZeroRecords":"No matching records found","oPaginate":{"sPrevious":"Previous","sNext":"Next"}}},"contact_form":{"sending_msg":"Sending message please wait...","captcha_nd":"Invisible captcha not defined!","captcha_nr":"Could not get invisible captcha response!"},"mailchimp":{"subscribing":"Subscribing you please wait..."},"search":{"more_result":"More Results","search_result":"SEARCH RESULT","not_found":"not found"},"elements_data":{"sections":[],"columns":[],"widgets":[]}};
+</script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/js/bdt-uikit.min.js?ver=3.17.11" id="bdt-uikit-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.4" id="elementor-webpack-runtime-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.4" id="elementor-frontend-modules-js"></script>
+<script src="https://www.taxmanager.cl/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir v\u00eddeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Diapositiva siguiente","a11yCarouselFirstSlideMessage":"Esta es la primera diapositiva","a11yCarouselLastSlideMessage":"Esta es la \u00faltima diapositiva","a11yCarouselPaginationBulletMessage":"Ir a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"M\u00f3vil vertical","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f3vil horizontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta horizontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.28.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_local_google_fonts":true,"nested-elements":true,"editor_v2":true,"home_screen":true},"urls":{"assets":"https:\/\/www.taxmanager.cl\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/www.taxmanager.cl\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/www.taxmanager.cl\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"ed185f89d3"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":13,"title":"Consultor%C3%ADa%20Tributaria%20y%20de%20Negocios%20en%20Chile%20%7C%20Outsourcing%20y%20Cumplimiento%20Normativo%20-%20Taxmanager","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.4" id="elementor-frontend-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-advanced-icon-box.min.js?ver=7.8.0" id="ep-advanced-icon-box-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/vendor/js/countUp.min.js?ver=2.0.4" id="advanced-counter-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-advanced-counter.min.js?ver=7.8.0" id="ep-advanced-counter-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/uploads/uicore-global.js?ver=1945" id="uicore_global-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/uicore-elements/assets/js/elements/highlighted-text.js?ver=1.2.3" id="ui-e-highlighted-text-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-parallax-effects.min.js?ver=7.8.0" id="ep-parallax-effects-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/vendor/js/anime.min.js?ver=3.2.1" id="anime-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-floating-effects.min.js?ver=7.8.0" id="ep-floating-effects-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/uicore-animate/assets/js/split.js?ver=2.1.5" id="ui-e-split-js"></script>
+<script id="formidable-js-extra">
+var frm_js = {"ajax_url":"https:\/\/www.taxmanager.cl\/wp-admin\/admin-ajax.php","images_url":"https:\/\/www.taxmanager.cl\/wp-content\/plugins\/formidable\/images","loading":"Loading\u2026","remove":"Remove","offset":"4","nonce":"d322469c9c","id":"ID","no_results":"No results match","file_spam":"That file looks like Spam.","calc_error":"There is an error in the calculation in the field with key","empty_fields":"Please complete the preceding required fields before uploading a file.","focus_first_error":"1","include_alert_role":"1","include_resend_email":""};
+</script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/formidable/js/frm.min.js?ver=6.20" id="formidable-js"></script>
+<script src="https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/js/common/helper.min.js?ver=7.8.0" id="element-pack-helper-js"></script>
+        <style>
+            .uicore-animate-scroll {
+                animation: .5s linear uicoreFadeIn both;
+                animation-timeline: view(block);
+            }
+        </style>
+        <script>
+            (function() {
+                const supportsAnimationTimeline = CSS.supports("animation-timeline", "scroll()");
+
+                if (!supportsAnimationTimeline && document.querySelector('.uicore-animate-scroll')) {
+                    const script = document.createElement('script');
+                    script.src = "https://www.taxmanager.cl/wp-content/plugins/uicore-animate/assets/js/scroll-timeline.js";
+                    script.async = true;
+                    document.head.appendChild(script);
+                }
+            })();
+        </script>
+</body>
+</html>
