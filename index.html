@@ -238,20 +238,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='ep-helper-css' href='https://www.taxmanager.cl/wp-content/plugins/bdthemes-element-pack/assets/css/ep-helper.css?ver=7.8.0' media='all' />
 <style id='wp-emoji-styles-inline-css'>
 
-@media (max-width: 767px) {
-  .elementor-inner-section .elementor-column {
-    width: 100% !important;
-    margin-bottom: 20px;
-  }
-
-  .bdt-ep-advanced-icon-box {
-    text-align: center;
-  }
-
-  .bdt-ep-advanced-icon-box-icon {
-    margin: 0 auto 10px;
-  }
-}
 
 
   .whatsapp-float {
@@ -723,6 +709,45 @@ body, * {
 <link rel="apple-touch-icon" href="img/logo.png" />
 <meta name="msapplication-TileImage" content="img/logo.png" />
 
+
+<style>
+  /* Correcciones generales para evitar separación incorrecta de palabras */
+
+  body, p, h1, h2, h3, h4, h5, h6, span, a, div {
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .ui-e--highlighted-text,
+  .elementor-widget-text-editor,
+  .elementor-heading-title,
+  .elementor-button-text {
+    white-space: normal !important;
+  }
+
+  /* Reversión de posibles conflictos previos */
+  span.whitespace {
+    display: inline !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  /* Espaciado coherente en botones */
+  .elementor-button .elementor-button-text {
+    padding: 0 4px !important;
+  }
+
+  /* Corrección de títulos en dispositivos móviles */
+  @media (max-width: 767px) {
+    .ui-e--highlighted-text {
+      font-size: 5vw !important;
+      white-space: normal !important;
+    }
+  }
+</style>
+
 </head>
 <body>
   <!-- 🔶 Elemento que sigue al cursor -->
@@ -857,7 +882,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						<div class="elementor-element elementor-element-4f99131 elementor-widget-tablet__width-initial ui-e-a-animate elementor-invisible elementor-widget elementor-widget-highlighted-text" data-id="4f99131" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="highlighted-text.default">
 				<div class="elementor-widget-container">
 							<h1 data-delay="900" class="ui-e--highlighted-text" >
-        <span class="ui-e-headline-text elementor-repeater-item-dc068de">Acompañamos la gestión <br>escolar con visión </span><span class="ui-e-headline-text elementor-repeater-item-ade6a67 ui-e-headline-stroke1">
+        <span class="ui-e-headline-text elementor-repeater-item-dc068de">Acompañamos la gestión escolar con visión </span><span class="ui-e-headline-text elementor-repeater-item-ade6a67 ui-e-headline-stroke1">
 									<span class="whitespace"></span>
                                     <span><span class="ui-e-headline-text ui-e-headline-highlighted">estratégica</span><span class="uicore-svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none"><path d='M15.2,133.3L15.2,133.3c121.9-7.6,244-9.9,366.1-6.8c34.6,0.9,69.1,2.3,103.7,4' /></svg></span></span> <span class="whitespace"> </span></span>        </h1>
         				</div>
