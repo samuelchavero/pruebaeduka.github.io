@@ -239,6 +239,43 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style id='wp-emoji-styles-inline-css'>
 
 
+  /* Correcciones generales de espaciado de texto */
+  body, p, h1, h2, h3, h4, h5, h6, span, a, div {
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    text-align: initial !important; /* evita texto justificado */
+  }
+
+  .ui-e--highlighted-text,
+  .elementor-widget-text-editor,
+  .elementor-heading-title,
+  .elementor-button-text {
+    white-space: normal !important;
+  }
+
+  /* Evita separación visual innecesaria con span.whitespace */
+  span.whitespace {
+    display: inline !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  /* Espaciado coherente en botones */
+  .elementor-button .elementor-button-text {
+    padding: 0 4px !important;
+  }
+
+  /* Ajustes específicos para mobile */
+  @media (max-width: 767px) {
+    .ui-e--highlighted-text {
+      font-size: 5vw !important;
+      white-space: normal !important;
+    }
+  }
+
+
 
   .whatsapp-float {
     position: fixed;
