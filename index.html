@@ -668,7 +668,13 @@ body, * {
     margin-bottom: 10px !important;
   }
 }
-
+@media (max-width: 767px) {
+  .elementor-element-da4421a,
+  .elementor-element-da4421a .elementor-widget-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
 
 </style>
 
@@ -783,6 +789,8 @@ body, * {
       white-space: normal !important;
     }
   }
+
+  
 </style>
 
 </head>
@@ -910,7 +918,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </script><!-- 1.4 uicore_before_content --><div id="primary" class="content-area">
 
 	        <article id="post-13" class="post-13 page type-page status-publish hentry">
-            <main class="entry-content">
+            <main class="entry-content ui-e-headline-text elementor-repeater-item-dc068de">
+              
                 		<div data-elementor-type="wp-page" data-elementor-id="13" class="elementor elementor-13">
 						<div class="elementor-section elementor-top-section elementor-element elementor-element-1acd6ca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1acd6ca" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
@@ -1021,18 +1030,18 @@ privada
 
 </div>
 
-    <!-- TEXTO INFORMATIVO PRINCIPAL -->
-    <div class="elementor-section elementor-top-section elementor-element elementor-element-04ba18c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="04ba18c" data-element_type="section">
-      <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f5fe10c" data-id="f5fe10c" data-element_type="column">
-          <div class="elementor-widget-wrap elementor-element-populated">
+  <!-- TEXTO INFORMATIVO PRINCIPAL -->
+    <div class="elementor-section elementor-top-section" style="width: 100%; margin: 0; padding: 0;">
+      <div class="elementor-container" style="max-width: 1200px; margin: auto; padding: 1rem 2rem;">
+        <div class="elementor-column elementor-col-100">
+          <div class="elementor-widget-wrap">
 
-            <div class="elementor-element elementor-element-715ddf0 elementor-widget elementor-widget-text-editor" data-id="715ddf0" data-element_type="widget" data-widget_type="text-editor.default">
+            <div class="elementor-element elementor-widget-text-editor">
               <div class="elementor-widget-container">
-                <p>
+                <p style="font-size: 1.1rem; line-height: 1.7; text-align: center;">
                   En EDUKA acompañamos a las instituciones educativas en su crecimiento, haciéndonos cargo de sus procesos administrativos, financieros y contables. 
-                  <br />
-                  <span style="font-size: inherit; font-family: var(--e-global-ffgraphy-uicore_secondary-font-family), Sans-serif; font-weight: var(--e-global-ffgraphy-uicore_secondary-font-weight); background-color: rgba(255, 255, 255, 0); color: var(--uicore-ffgraphy--p-c,'#070707'); font-style: var(--uicore-ffgraphy--p-st,'normal'); letter-spacing: var(--uicore-ffgraphy--p-ls,'-0.027em'); text-transform: var(--uicore-ffgraphy--p-t,'none');">
+                  <br><br>
+                  <span style="color: #070707;">
                     Nuestro servicio integral permite a las escuelas enfocarse en lo más importante: brindar una educación de calidad, mientras nosotros optimizamos su operativa interna con eficiencia, tecnología y transparencia.
                   </span>
                 </p>
@@ -1060,7 +1069,8 @@ privada
     }' 
     data-widget_type="image.default"
 >
-    <div class="elementor-widget-container">
+    <div class="elementor-widget-container elementor-element style="width: 100%; margin-top: 2rem;>
+      <div class="elementor-widget-container">
         <img fetchpriority="high" decoding="async" width="2000" height="1119" 
             src="img/contacto-imagen.jpg" 
             class="attachment-full size-full wp-image-102" 
